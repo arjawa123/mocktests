@@ -58,8 +58,6 @@ export const quizFiles: QuizFile[] = [
     description: "Kisi-kisi review questions for quick drills."
   }
 ];
-];
-];
 
 export function getQuizFilesByMode(mode: QuizMode) {
   return quizFiles.filter((file) => file.mode === mode);
