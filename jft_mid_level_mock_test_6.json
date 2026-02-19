@@ -1,0 +1,1063 @@
+{
+  "mocktestName": "JFT MID Level Mock Test 6",
+  "level": "hard",
+  "items": [
+    {
+      "number": 1,
+      "section": "漢字・語彙",
+      "question": "電話番号 を教えてください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "でんごうばん"
+        },
+        {
+          "choice": "B",
+          "text": "ばんごうでん"
+        },
+        {
+          "choice": "C",
+          "text": "でんわばんごう"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 2,
+      "section": "漢字・語彙",
+      "question": "台所 で料理をします。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "だいどころ"
+        },
+        {
+          "choice": "B",
+          "text": "せんめんだい"
+        },
+        {
+          "choice": "C",
+          "text": "いま"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 3,
+      "section": "漢字・語彙",
+      "question": "紙を切るために、 はさみ を使います。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "鋏"
+        },
+        {
+          "choice": "B",
+          "text": "糊"
+        },
+        {
+          "choice": "C",
+          "text": "定規"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 4,
+      "section": "漢字・語彙",
+      "question": "私は 音楽 が好きです。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "おんがく"
+        },
+        {
+          "choice": "B",
+          "text": "すうがく"
+        },
+        {
+          "choice": "C",
+          "text": "りか"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 5,
+      "section": "漢字・語彙",
+      "question": "来週 はテストがあります。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "こんしゅう"
+        },
+        {
+          "choice": "B",
+          "text": "らいしゅう"
+        },
+        {
+          "choice": "C",
+          "text": "せんしゅう"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 6,
+      "section": "漢字・語彙",
+      "question": "あのレストランは料理もおいしくて、店員も（ ）です。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "親切"
+        },
+        {
+          "choice": "B",
+          "text": "便利"
+        },
+        {
+          "choice": "C",
+          "text": "上手"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 7,
+      "section": "漢字・語彙",
+      "question": "教科書 を忘れました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "きょうかしょ"
+        },
+        {
+          "choice": "B",
+          "text": "きょうがしょ"
+        },
+        {
+          "choice": "C",
+          "text": "きょうしょか"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 8,
+      "section": "漢字・語彙",
+      "question": "住所 をここに書いてください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "じゅうしょ"
+        },
+        {
+          "choice": "B",
+          "text": "しょざい"
+        },
+        {
+          "choice": "C",
+          "text": "じゅうところ"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 9,
+      "section": "漢字・語彙",
+      "question": "家に入るときは、 靴 を脱いでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "スリッパ"
+        },
+        {
+          "choice": "B",
+          "text": "くつ"
+        },
+        {
+          "choice": "C",
+          "text": "ぼうし"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 10,
+      "section": "漢字・語彙",
+      "question": "荷物が重いので、車で（ ）ましょうか。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "運び"
+        },
+        {
+          "choice": "B",
+          "text": "飛び"
+        },
+        {
+          "choice": "C",
+          "text": "泳ぎ"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 11,
+      "section": "漢字・語彙",
+      "question": "今日は大事な会議があるので、時間に（ ）来てください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "遅れずに"
+        },
+        {
+          "choice": "B",
+          "text": "忘れずに"
+        },
+        {
+          "choice": "C",
+          "text": "急がずに"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 12,
+      "section": "漢字・語彙",
+      "question": "きれいな 写真 を撮りました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "てがみ"
+        },
+        {
+          "choice": "B",
+          "text": "え"
+        },
+        {
+          "choice": "C",
+          "text": "しゃしん"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 13,
+      "section": "漢字・語彙",
+      "question": "新幹線 で大阪に行きます。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "しんせんかん"
+        },
+        {
+          "choice": "B",
+          "text": "しんかんせん"
+        },
+        {
+          "choice": "C",
+          "text": "しんけんせん"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 14,
+      "section": "漢字・語彙",
+      "question": "明日は雪が（ ）そうですから、出かけないほうがいいですよ。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "降る"
+        },
+        {
+          "choice": "B",
+          "text": "晴れる"
+        },
+        {
+          "choice": "C",
+          "text": "曇る"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 15,
+      "section": "漢字・語彙",
+      "question": "字を間違えたので、 消しゴム で消しました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "ふでばこ"
+        },
+        {
+          "choice": "B",
+          "text": "じょうぎ"
+        },
+        {
+          "choice": "C",
+          "text": "けしゴム"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 16,
+      "section": "文法・表現",
+      "question": "A： 昨日どこへ行きましたか？ B： 友だちと＿＿＿＿＿＿へ行きました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "えいがかん"
+        },
+        {
+          "choice": "B",
+          "text": "朝ごはん"
+        },
+        {
+          "choice": "C",
+          "text": "うち"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 17,
+      "section": "文法・表現",
+      "question": "A： 映画はどうでしたか？ B： とても＿＿＿＿＿＿。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "おいしかったです"
+        },
+        {
+          "choice": "B",
+          "text": "おもしろかったです"
+        },
+        {
+          "choice": "C",
+          "text": "あたたかかったです"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 18,
+      "section": "文法・表現",
+      "question": "A： そのかばん、いいですね。 B： ありがとう、＿＿＿＿＿＿。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "たかかったです"
+        },
+        {
+          "choice": "B",
+          "text": "あたらしいくつです"
+        },
+        {
+          "choice": "C",
+          "text": "かいませんでした"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 19,
+      "section": "文法・表現",
+      "question": "A： ペンをかしてくれませんか？ B： はい、＿＿＿＿＿＿。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "どうぞ"
+        },
+        {
+          "choice": "B",
+          "text": "だめです"
+        },
+        {
+          "choice": "C",
+          "text": "たぶん"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 20,
+      "section": "文法・表現",
+      "question": "A： 今週のテスト、難しかったですか？ B： はい、＿＿＿＿＿＿。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "よくできました"
+        },
+        {
+          "choice": "B",
+          "text": "とてもむずかしかったです"
+        },
+        {
+          "choice": "C",
+          "text": "あまり見ません"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 21,
+      "section": "文法・表現",
+      "question": "A： この料理、だれが作ったんですか？ B： ＿＿＿＿＿＿作りました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "父が"
+        },
+        {
+          "choice": "B",
+          "text": "いすが"
+        },
+        {
+          "choice": "C",
+          "text": "昼が"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 22,
+      "section": "文法・表現",
+      "question": "A： これはあなたのですか？ B： はい、＿＿＿＿＿＿。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "かえりました"
+        },
+        {
+          "choice": "B",
+          "text": "そうです"
+        },
+        {
+          "choice": "C",
+          "text": "いきません"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 23,
+      "section": "文法・表現",
+      "question": "A： 休みの日はなにをしますか？ B： 家で＿＿＿＿＿＿。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "あそびます"
+        },
+        {
+          "choice": "B",
+          "text": "ねます"
+        },
+        {
+          "choice": "C",
+          "text": "はたらきます"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 24,
+      "section": "文法・表現",
+      "question": "A： ごはんをたべましたか？ B： いいえ、＿＿＿＿＿＿。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "まだです"
+        },
+        {
+          "choice": "B",
+          "text": "あとでねます"
+        },
+        {
+          "choice": "C",
+          "text": "今から行きます"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 25,
+      "section": "文法・表現",
+      "question": "A： これはどこで買いましたか？ B： ＿＿＿＿＿＿で買いました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "駅の前の店"
+        },
+        {
+          "choice": "B",
+          "text": "友だちのいぬ"
+        },
+        {
+          "choice": "C",
+          "text": "パソコン"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 26,
+      "section": "文法・表現",
+      "question": "A： このシャツはいかがですか？ B： ＿＿＿＿＿＿と思います。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "ちょっと高い"
+        },
+        {
+          "choice": "B",
+          "text": "とても暑い"
+        },
+        {
+          "choice": "C",
+          "text": "あまり好きじゃない"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 27,
+      "section": "文法・表現",
+      "question": "A： だれがこの本をかりましたか？ B： ＿＿＿＿＿＿かりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "わたしが"
+        },
+        {
+          "choice": "B",
+          "text": "ははに"
+        },
+        {
+          "choice": "C",
+          "text": "いぬが"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 28,
+      "section": "文法・表現",
+      "question": "A： この電車は東京へ行きますか？ B： はい、＿＿＿＿＿＿。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "行きます"
+        },
+        {
+          "choice": "B",
+          "text": "来ます"
+        },
+        {
+          "choice": "C",
+          "text": "飲みます"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 29,
+      "section": "文法・表現",
+      "question": "A： どこでこの写真をとりましたか？ B： 学校の＿＿＿＿＿＿です。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "中"
+        },
+        {
+          "choice": "B",
+          "text": "本"
+        },
+        {
+          "choice": "C",
+          "text": "名前"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 30,
+      "section": "文法・表現",
+      "question": "A： ケーキを食べませんか？ B： はい、＿＿＿＿＿＿。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "行きましょう"
+        },
+        {
+          "choice": "B",
+          "text": "いりません"
+        },
+        {
+          "choice": "C",
+          "text": "食べましょう"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 31,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/qfej7morehf5bx3o7b3o9/N5Q4-1.mp3?rlkey=wdtql1v05dn9dz0gkpt7ytl90&st=zsrq9741&dl=0"
+      ]
+    },
+    {
+      "number": 32,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/4ogzqrgz79s44fd9q7ddh/N5Q4-3.mp3?rlkey=8slig7ovd5zd4xuz9xuzwuqo3&st=12yrul4i&dl=0"
+      ]
+    },
+    {
+      "number": 33,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/2f87ygp7decyh1mhn9011/N5Q3-1.mp3?rlkey=rgqx1x6h3zlzehuxq34xd8klh&st=z7foi8em&dl=0"
+      ]
+    },
+    {
+      "number": 34,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/rizejd99kiztvy2dfkasj/N5Q4-4.mp3?rlkey=im9fnl09ziz4f1ras42w0s3e2&st=c2x7qmot&dl=0"
+      ]
+    },
+    {
+      "number": 35,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/6w73iiftmczceq02533ad/N5Q3-4.mp3?rlkey=izemwdwz0honrl9welik5099b&st=wothp1oj&dl=0"
+      ]
+    },
+    {
+      "number": 36,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/emhwpsp4dnj3t45ydjza5/N5Q3-3.mp3?rlkey=rv0skg2mwgcc94oeai4zswnzm&st=0cdcuqc3&dl=0"
+      ]
+    },
+    {
+      "number": 37,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/utdbi82bn7asok151j0ov/N5Q4-5.mp3?rlkey=iv2xzh0qq8ud0owiquqf3w8lo&st=vppjpvg7&dl=0"
+      ]
+    },
+    {
+      "number": 38,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/h7mvmlelfcky5p6y0pqzx/N5Q3-5.mp3?rlkey=e97dck2xdcpugpujh8uubob1k&st=8m0bzo9b&dl=0"
+      ]
+    },
+    {
+      "number": 39,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/kh0486avsktsulam8bidg/N5Q4-2.mp3?rlkey=ulj8vt8mpss96p588eparrxmt&st=pfzkqg3o&dl=0"
+      ]
+    },
+    {
+      "number": 40,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/d564r8vzhqqhun274r2vq/N5Q3-2.mp3?rlkey=w942rzx449pb6wyfhf8qzel69&st=22m69iah&dl=0"
+      ]
+    },
+    {
+      "number": 41,
+      "section": "読解",
+      "question": null,
+      "options": [],
+      "answer": null,
+      "assetUrls": []
+    },
+    {
+      "number": 42,
+      "section": "読解",
+      "question": "この人は何をして楽しくすごしましたか。\n友だちの家でパーティーをしました。みんなでゲームをしたり、歌をうたったりして楽しくすごしました。おかしもたくさん食べました。とてもたのしい一日でした。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "歌をうたった"
+        },
+        {
+          "choice": "B",
+          "text": "勉強した"
+        },
+        {
+          "choice": "C",
+          "text": "映画を見た"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 43,
+      "section": "読解",
+      "question": "夜、家族で何をしますか。\n夜になると、家族でテレビを見ます。ニュースを見たり、ドラマを見たりします。昨日はおもしろい映画を見ました。みんなでわらって、たのしい時間をすごしました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "テレビを見る"
+        },
+        {
+          "choice": "B",
+          "text": "さんぽをする"
+        },
+        {
+          "choice": "C",
+          "text": "音楽を聞く"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 44,
+      "section": "読解",
+      "question": "この人は週末に何を買ってもらいましたか。\n週末に、父といっしょに買い物に行きました。新しいくつを買ってもらいました。そのあと、カフェでアイスを食べました。父との時間はたのしいです。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "ぼうし"
+        },
+        {
+          "choice": "B",
+          "text": "くつ"
+        },
+        {
+          "choice": "C",
+          "text": "かばん"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 45,
+      "section": "読解",
+      "question": "この人は何について発表しましたか。\n学校でクラスの発表がありました。私は日本の文化について話しました。すこしきんちょうしましたが、うまく話せました。先生にも「よくできました」と言われました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "日本の文化"
+        },
+        {
+          "choice": "B",
+          "text": "おんがく"
+        },
+        {
+          "choice": "C",
+          "text": "すうがく"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 46,
+      "section": "読解",
+      "question": "この人はなぜ日記を書いていますか。\n私はまいにち、日記を書いています。学校のことや家のことをかいています。ときどき、友だちのことも書きます。日記を書くと、心が落ちつきます。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "心が落ちつくから"
+        },
+        {
+          "choice": "B",
+          "text": "面白いから"
+        },
+        {
+          "choice": "C",
+          "text": "怒られたから"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 47,
+      "section": "読解",
+      "question": "姉は週に何をしていますか。\n姉は毎週水曜日にテニスをしています。友だちといっしょにれんしゅうして、たいかいにも出ます。この前のたいかいで二位になって、家族みんなでおいわいしました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "テニス"
+        },
+        {
+          "choice": "B",
+          "text": "水泳"
+          },
+          {
+            "choice": "C",
+            "text": "野球"
+          }
+        ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 48,
+      "section": "読解",
+      "question": "この人は夏にどこに行きましたか。\n夏に家族と海に行きました。水がつめたくて、気持ちよかったです。すなでお城を作ったり、スイカを食べたりしました。帰るときは、少しさびしかったです。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "川"
+        },
+        {
+          "choice": "B",
+          "text": "海"
+        },
+        {
+          "choice": "C",
+          "text": "山"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 49,
+      "section": "読解",
+      "question": "この人は朝、何を食べましたか。\n今日の朝ごはんはパンとたまごでした。牛乳も飲みました。母が用意してくれたので、私はおいしくいただきました。朝ごはんを食べると、元気になります。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "ごはんとさかな"
+        },
+        {
+          "choice": "B",
+          "text": "パンとたまご"
+        },
+        {
+          "choice": "C",
+          "text": "ラーメン"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 50,
+      "section": "読解",
+      "question": "この人はなぜびょういんに行きましたか。\n先週、びょういんに行きました。のどがいたくて、せきも出ていました。いしゃに見てもらって、くすりをもらいました。今はもう元気になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "のどがいたかった"
+        },
+        {
+          "choice": "B",
+          "text": "足がいたかった"
+          },
+          {
+            "choice": "C",
+            "text": "けがをした"
+          }
+        ],
+        "answer": "A",
+        "assetUrls": []
+      }
+    ]
+}
