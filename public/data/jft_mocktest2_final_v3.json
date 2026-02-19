@@ -1,0 +1,1076 @@
+{
+  "mocktestName": "JFT Mock Test 2",
+  "level": "hard",
+  "items": [
+    {
+      "number": 1,
+      "section": "漢字・語彙",
+      "question": "たくさん 話したので（ ）が いたいです。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "ひげ"
+        },
+        {
+          "choice": "B",
+          "text": "のど"
+        },
+        {
+          "choice": "C",
+          "text": "うで"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 2,
+      "section": "漢字・語彙",
+      "question": "のった 電車はとても（ ）いたので、すわれませんでした。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "こんで"
+        },
+        {
+          "choice": "B",
+          "text": "たりて"
+        },
+        {
+          "choice": "C",
+          "text": "あつまって"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 3,
+      "section": "漢字・語彙",
+      "question": "日本に 行った とき、きものを きたり、まつりで おどったり、いろいろな（ ）を しました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "しゅうかん"
+        },
+        {
+          "choice": "B",
+          "text": "きょうみ"
+        },
+        {
+          "choice": "C",
+          "text": "けいけん"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 4,
+      "section": "漢字・語彙",
+      "question": "どんな まんがが すきか、小学生に（ ）を しました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "コンピュータ"
+        },
+        {
+          "choice": "B",
+          "text": "コンサート"
+        },
+        {
+          "choice": "C",
+          "text": "アンケート"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 5,
+      "section": "漢字・語彙",
+      "question": "わたしが かりて いる アパートの（ ）は 1か月 7万円です。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "おつり"
+        },
+        {
+          "choice": "B",
+          "text": "やちん"
+        },
+        {
+          "choice": "C",
+          "text": "ふりこみ"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 6,
+      "section": "漢字・語彙",
+      "question": "この 写真に（ ）いるのは 私の 両親です。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "かかって"
+        },
+        {
+          "choice": "B",
+          "text": "うつって"
+        },
+        {
+          "choice": "C",
+          "text": "とどいて"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 7,
+      "section": "漢字・語彙",
+      "question": "新幹線の きっぷは、かたみちなら 1万円、（ ）なら 2万円です。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "おうふく"
+        },
+        {
+          "choice": "B",
+          "text": "うんてん"
+        },
+        {
+          "choice": "C",
+          "text": "あんない"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 8,
+      "section": "漢字・語彙",
+      "question": "引っ越しの とき、さらは かみで（ ）箱に 入れます。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "かたづけて"
+        },
+        {
+          "choice": "B",
+          "text": "つかまえて"
+        },
+        {
+          "choice": "C",
+          "text": "つつんで"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 9,
+      "section": "漢字・語彙",
+      "question": "たなかさんの いえの 電気が ついて いませんね。たなかさんは（ ）の ようです。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "じゅうし"
+        },
+        {
+          "choice": "B",
+          "text": "うそ"
+        },
+        {
+          "choice": "C",
+          "text": "るす"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 10,
+      "section": "漢字・語彙",
+      "question": "バスが 8時に 出発 します。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "しゅっぱつ"
+        },
+        {
+          "choice": "B",
+          "text": "しゅうはつ"
+        },
+        {
+          "choice": "C",
+          "text": "しゅっはつ"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 11,
+      "section": "漢字・語彙",
+      "question": "すぐに 答えて ください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "おしえて"
+        },
+        {
+          "choice": "B",
+          "text": "こたえて"
+        },
+        {
+          "choice": "C",
+          "text": "かんがえて"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 12,
+      "section": "漢字・語彙",
+      "question": "あの 人は 心 が きれいです。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "こころ"
+        },
+        {
+          "choice": "B",
+          "text": "あたま"
+        },
+        {
+          "choice": "C",
+          "text": "きもち"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 13,
+      "section": "漢字・語彙",
+      "question": "最後 の ページを 見て ください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "さいしょ"
+        },
+        {
+          "choice": "B",
+          "text": "さいご"
+        },
+        {
+          "choice": "C",
+          "text": "せいしょ"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 14,
+      "section": "漢字・語彙",
+      "question": "この 道を 行くと、少し 遠い です。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "とおい"
+        },
+        {
+          "choice": "B",
+          "text": "はやい"
+        },
+        {
+          "choice": "C",
+          "text": "ちかい"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 15,
+      "section": "漢字・語彙",
+      "question": "おととしの 冬、日本を りょこうしました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "なつ"
+        },
+        {
+          "choice": "B",
+          "text": "はる"
+        },
+        {
+          "choice": "C",
+          "text": "ふゆ"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 16,
+      "section": "文法・表現",
+      "question": "わたしも ピアノを 習う こと（ ）しました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "に"
+        },
+        {
+          "choice": "B",
+          "text": "は"
+        },
+        {
+          "choice": "C",
+          "text": "が"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 17,
+      "section": "文法・表現",
+      "question": "ジョン「ざんねんですが、一週間（ ）いられません。」",
+      "options": [
+        {
+          "choice": "A",
+          "text": "しか"
+        },
+        {
+          "choice": "B",
+          "text": "では"
+        },
+        {
+          "choice": "C",
+          "text": "から"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 18,
+      "section": "文法・表現",
+      "question": "漢字・語彙 15",
+      "options": [
+        {
+          "choice": "A",
+          "text": "に"
+        },
+        {
+          "choice": "B",
+          "text": "と"
+        },
+        {
+          "choice": "C",
+          "text": "を"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 19,
+      "section": "文法・表現",
+      "question": "私の 兄は、テニスも サッカー（ ）上手です。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "か"
+        },
+        {
+          "choice": "B",
+          "text": "を"
+        },
+        {
+          "choice": "C",
+          "text": "が"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 20,
+      "section": "文法・表現",
+      "question": "A「きのうの 夜、（ ）電話に 出なかったんですか。」 B「ごめんなさい。おふろに 入って いました。」",
+      "options": [
+        {
+          "choice": "A",
+          "text": "どのように"
+        },
+        {
+          "choice": "B",
+          "text": "どうして"
+        },
+        {
+          "choice": "C",
+          "text": "なぜなら"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 21,
+      "section": "文法・表現",
+      "question": "父は 朝ごはんの 前に（ ）新聞を 読む。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "あまり"
+        },
+        {
+          "choice": "B",
+          "text": "きちんと"
+        },
+        {
+          "choice": "C",
+          "text": "かならず"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 22,
+      "section": "文法・表現",
+      "question": "この アニメは 世界（ ）の 子どもたちに 人気が ある。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "中"
+        },
+        {
+          "choice": "B",
+          "text": "うち"
+        },
+        {
+          "choice": "C",
+          "text": "全部"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 23,
+      "section": "文法・表現",
+      "question": "この パソコンは 何回（ ）また すぐ こわれる。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "つかっても"
+        },
+        {
+          "choice": "B",
+          "text": "なおしても"
+        },
+        {
+          "choice": "C",
+          "text": "たたいても"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 24,
+      "section": "文法・表現",
+      "question": "田中さんは 先生に 作文を（ ）よろこんでいました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "よまれて"
+        },
+        {
+          "choice": "B",
+          "text": "おこられて"
+        },
+        {
+          "choice": "C",
+          "text": "ほめられて"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 25,
+      "section": "文法・表現",
+      "question": "私は 医者に（ ）ために いっしょうけんめい 勉強して います。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "なる"
+        },
+        {
+          "choice": "B",
+          "text": "なった"
+        },
+        {
+          "choice": "C",
+          "text": "なること"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 26,
+      "section": "文法・表現",
+      "question": "A「すみません。山田さんの けいたい電話の ばんごうを（ ）。」 B「いいですよ。090-111-1111 です。」",
+      "options": [
+        {
+          "choice": "A",
+          "text": "教えて"
+        },
+        {
+          "choice": "B",
+          "text": "教えてくれませんか"
+        },
+        {
+          "choice": "C",
+          "text": "教えますか"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 27,
+      "section": "文法・表現",
+      "question": "田中さんの 結婚パーティーが、今週の 土曜日に（ ）。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "行きます"
+        },
+        {
+          "choice": "B",
+          "text": "開きます"
+        },
+        {
+          "choice": "C",
+          "text": "はじめます"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 28,
+      "section": "文法・表現",
+      "question": "西山「森さんが アルバイトを 始めたそうですよ。」 中田「ああ、だから 最近 じゅぎょうの あと 急いで（ ）ね。」",
+      "options": [
+        {
+          "choice": "A",
+          "text": "帰っているところです"
+        },
+        {
+          "choice": "B",
+          "text": "行ったことです"
+        },
+        {
+          "choice": "C",
+          "text": "来るところです"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 29,
+      "section": "文法・表現",
+      "question": "山下「森さんのたんじょうびに何をあげましょうか。」 田中「花はどうですか。」 山下「きっと（ ）。」",
+      "options": [
+        {
+          "choice": "A",
+          "text": "よろこんだようです"
+        },
+        {
+          "choice": "B",
+          "text": "よろこぶでしょう"
+        },
+        {
+          "choice": "C",
+          "text": "よろこんだんです"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 30,
+      "section": "文法・表現",
+      "question": "（駅で） A「飲み物がほしいので、急いで買ってきますね。」 B「出発まで時間はありますから、（ ）よ。」",
+      "options": [
+        {
+          "choice": "A",
+          "text": "急がなくてもいいです"
+        },
+        {
+          "choice": "B",
+          "text": "急がなければなりません"
+        },
+        {
+          "choice": "C",
+          "text": "急いだほうがいいです"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 31,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "山本さんが きょうしつに いるとき"
+        },
+        {
+          "choice": "B",
+          "text": "山本さんが きょうしつを 出たとき"
+        },
+        {
+          "choice": "C",
+          "text": "山本さんが としょかんを 出たとき"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/xmhwpyy0uz9km4t75cueo/N4Q2-3.mp3?rlkey=rb0oniv7er9bt2ivo0swkzz4p&st=z05xrwq4&dl=0"
+      ]
+    },
+    {
+      "number": 32,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "あく 時間が はやく なる"
+        },
+        {
+          "choice": "B",
+          "text": "しまる 時間が おそく なる"
+        },
+        {
+          "choice": "C",
+          "text": "チケットが 安く なる"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/dtxe342kbvpch4pgnpzu6/N4Q2-4.mp3?rlkey=1lfz41pxmyfddvg5ni900t33f&st=l10pnecl&dl=0"
+      ]
+    },
+    {
+      "number": 33,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "いろいろな ばしょに おいて あること"
+        },
+        {
+          "choice": "B",
+          "text": "うって いる ものの しゅるいが 多いこと"
+        },
+        {
+          "choice": "C",
+          "text": "お金が ぬすまれないこと"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/bnc2n2ass0djb74r4e3pf/N4Q2-5.mp3?rlkey=trdp8pqhu6ooq71m4y9oeb4z6&st=rwdui917&dl=0"
+      ]
+    },
+    {
+      "number": 34,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "5 時から 6時まで"
+        },
+        {
+          "choice": "B",
+          "text": "5 時半から 6時まで"
+        },
+        {
+          "choice": "C",
+          "text": "5 時半から 6時半まで"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/cq71x28jubjw86esj7a30/N4Q2-6.mp3?rlkey=wfgflouclioihwcf1xf6w0m0f&st=dlbhxon3&dl=0"
+      ]
+    },
+    {
+      "number": 35,
+      "section": "聴解",
+      "question": "Dengarkanlah pertanyaan dan percakapan berikut, kemudian pilihlah jawaban yang sesuai",
+      "options": [
+        {
+          "choice": "A",
+          "text": "食べものの 店が たくさん あるから"
+        },
+        {
+          "choice": "B",
+          "text": "まつりが あって にぎやかだから"
+        },
+        {
+          "choice": "C",
+          "text": "ふねの 上で さくらが 見られるから"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/wv4k1d2gnd55hfyq05jq6/N4Q2-7.mp3?rlkey=4foazo859561iwgn4db45n6g4&st=3rifqimn&dl=0"
+      ]
+    },
+    {
+      "number": 36,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/ma3bf213c6zxmoppim8zf/N4Q3-1.mp3?rlkey=2mlsvbc0bgx5rjudt0mgzzr92&st=ya87m8gy&dl=0"
+      ]
+    },
+    {
+      "number": 37,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/wwbppgue0r1h2gq1jm2tc/N4Q3-2.mp3?rlkey=d2hbigpvjez7ug45xobjdz7k4&st=tcbjoskx&dl=0"
+      ]
+    },
+    {
+      "number": 38,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/k567e1t2pcmd2dwi1gwea/N4Q3-3.mp3?rlkey=47xnjf1mfdsatfvxip28anxzb&st=t9saoq8x&dl=0"
+      ]
+    },
+    {
+      "number": 39,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/qdrzj5sskzds0io3kgq4n/N4Q3-4.mp3?rlkey=r18xc4gmsjr6acnq9uatorran&st=3n79nzjg&dl=0"
+      ]
+    },
+    {
+      "number": 40,
+      "section": "聴解",
+      "question": "まず文を聞いてください。それから、その返事を聞いて、１から３の中から、いちばんいいものを一つ選んでください。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "1"
+        },
+        {
+          "choice": "B",
+          "text": "2"
+        },
+        {
+          "choice": "C",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": [
+        "https://dl.dropbox.com/scl/fi/zwvx83vynekezy4969qbw/N4Q3-5.mp3?rlkey=8ouz51hh2z6frshrzpcrqegci&st=j7ex1pfg&dl=0"
+      ]
+    },
+    {
+      "number": 41,
+      "section": "読解",
+      "question": "なぜ駅まで歩いて行きましたか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "バスが来なかったから"
+        },
+        {
+          "choice": "B",
+          "text": "電車が止まっていたから"
+        },
+        {
+          "choice": "C",
+          "text": "バスより歩いたほうが早いと思ったから"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 42,
+      "section": "読解",
+      "question": "会議にはどうしましたか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "時間どおりに来た"
+        },
+        {
+          "choice": "B",
+          "text": "少しおくれた"
+        },
+        {
+          "choice": "C",
+          "text": "参加しなかった"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 43,
+      "section": "読解",
+      "question": "上司は何と言いましたか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "おくれてはいけません"
+        },
+        {
+          "choice": "B",
+          "text": "会社には歩いてきなさい"
+        },
+        {
+          "choice": "C",
+          "text": "早く来ようとしたことはいいことだ"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 44,
+      "section": "読解",
+      "question": "昼ごはんを食べたとき、どんな気持ちでしたか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "一人で食べてつまらなかった"
+        },
+        {
+          "choice": "B",
+          "text": "話しながら食べて楽しかった"
+        },
+        {
+          "choice": "C",
+          "text": "おなかがすいていなかった"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 45,
+      "section": "読解",
+      "question": "この日の一日はどうでしたか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "つまらなかった"
+        },
+        {
+          "choice": "B",
+          "text": "大変だったけど、よかった"
+        },
+        {
+          "choice": "C",
+          "text": "上司におこられたから悪かった"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 46,
+      "section": "読解",
+      "question": "どこへ旅行に行きましたか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "なら"
+        },
+        {
+          "choice": "B",
+          "text": "きょうと"
+        },
+        {
+          "choice": "C",
+          "text": "おおさか"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 47,
+      "section": "読解",
+      "question": "「ゆば」はどうでしたか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "思っていたよりおいしくなかった"
+        },
+        {
+          "choice": "B",
+          "text": "思っていたよりおいしかった"
+        },
+        {
+          "choice": "C",
+          "text": "たべられなかった"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    },
+    {
+      "number": 48,
+      "section": "読解",
+      "question": "ホテルについて正しいのはどれですか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "部屋がせまかった"
+        },
+        {
+          "choice": "B",
+          "text": "夜はあつかった"
+        },
+        {
+          "choice": "C",
+          "text": "きれいで広かった"
+        }
+      ],
+      "answer": "C",
+      "assetUrls": []
+    },
+    {
+      "number": 49,
+      "section": "読解",
+      "question": "たいへんだったことは何ですか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "ふくがうすかった"
+        },
+        {
+          "choice": "B",
+          "text": "お金をわすれた"
+        },
+        {
+          "choice": "C",
+          "text": "電車にのりおくれた"
+        }
+      ],
+      "answer": "A",
+      "assetUrls": []
+    },
+    {
+      "number": 50,
+      "section": "読解",
+      "question": "旅行で一番楽しかったことは何ですか。\nけさ、わたしは朝早くおきて、駅まであるいて行きました。バスに乗るつもりでしたが、道がこんでいたので、歩いたほうが早いと思ったからです。駅に着いたとき、ちょうど電車が来て、まにあいました。\n会社では朝の会議がありましたが、少しだけおくれてしまいました。でも、上司は「早く来ようとした気持ちが大切です」と言ってくれました。その言葉を聞いて、うれしくなりました。\n仕事の後、同僚といっしょに昼ごはんを食べました。話しながら食べたので、いつもよりおいしく感じました。今日は大変だったけれど、いい一日になりました。",
+      "options": [
+        {
+          "choice": "A",
+          "text": "朝ごはん゚食べたこと"
+        },
+        {
+          "choice": "B",
+          "text": "ライトアップを見たこと"
+        },
+        {
+          "choice": "C",
+          "text": "京都に行ったこと"
+        }
+      ],
+      "answer": "B",
+      "assetUrls": []
+    }
+  ]
+}
