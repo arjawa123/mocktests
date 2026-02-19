@@ -63,16 +63,33 @@ function transformMockTest(data: MockTestFile): QuizQuestion[] {
 
 function transformKisiKisi(items: KisiKisiItem[]): QuizQuestion[] {
   return items
-    .filter((item) => item.question && item.correct_answer && item.options)
+    .filter(
+      (item) =>
+        item.question &&
+        item.correct_answer &&
+        Array.isArray(item.options) &&
+        item.options.length > 0
+    )
     .map((item) => {
-      const options = item.options.map((text, index) => ({
+      const uniqueOptionTexts = getUniqueOptionTexts(item.options);
+      const matchIndex = uniqueOptionTexts.findIndex(
+        (option) =>
+          normalizeText(option) === normalizeText(item.correct_answer)
+      );
+      const normalizedAnswer = item.correct_answer.trim();
+      const optionTexts =
+        matchIndex >= 0
+          ? uniqueOptionTexts
+          : [...uniqueOptionTexts, normalizedAnswer];
+
+      const options = optionTexts.map((text, index) => ({
         id: String.fromCharCode(65 + index),
         text
       }));
-      const matchIndex = item.options.findIndex(
-        (option) => option === item.correct_answer
+      const answerIndex = optionTexts.findIndex(
+        (option) => normalizeText(option) === normalizeText(normalizedAnswer)
       );
-      const answerId = matchIndex >= 0 ? options[matchIndex].id : item.correct_answer;
+      const answerId = answerIndex >= 0 ? options[answerIndex].id : options[0]?.id ?? "";
       return {
         id: `kisi-${item.index}`,
         section: "Kisi-kisi",
@@ -82,4 +99,24 @@ function transformKisiKisi(items: KisiKisiItem[]): QuizQuestion[] {
         imageUrl: item.image
       };
     });
+}
+
+function getUniqueOptionTexts(options: string[]) {
+  const seen = new Set<string>();
+  const unique: string[] = [];
+
+  options.forEach((option) => {
+    const normalized = normalizeText(option);
+    if (!normalized || seen.has(normalized)) {
+      return;
+    }
+    seen.add(normalized);
+    unique.push(option.trim());
+  });
+
+  return unique;
+}
+
+function normalizeText(value: string) {
+  return value.trim();
 }

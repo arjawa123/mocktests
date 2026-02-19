@@ -16,6 +16,27 @@ export const quizFiles: QuizFile[] = [
     description: "Mid level mock test with audio sections."
   },
   {
+    id: "jitensha-review",
+    mode: "kisi-kisi",
+    label: "Jitensha Review Set",
+    fileName: "jft_jitensha_review.json",
+    description: "Kisi-kisi review questions for quick drills."
+  },
+  {
+    id: "saifu-review",
+    mode: "kisi-kisi",
+    label: "Saifu Review Set",
+    fileName: "jft_saifu_review.json",
+    description: "Kisi-kisi review questions for quick drills."
+  },
+  {
+    id: "kudamono-review",
+    mode: "kisi-kisi",
+    label: "Kudamono Review Set",
+    fileName: "jft_kudamono_review.json",
+    description: "Kisi-kisi review questions for quick drills."
+  },
+  {
     id: "kuroi-review",
     mode: "kisi-kisi",
     label: "Kuroi Review Set",
