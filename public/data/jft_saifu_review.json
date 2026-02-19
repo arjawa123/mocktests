@@ -1,0 +1,613 @@
+[
+    {
+      "index": 1,
+      "question": "1.  *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVBikPLLbKrwPyMUrRncuO14Yt8NyDNlMRr6hYlRUghG-RXl9tbzV9VkK0jviQ4O36LFz4fNV_5jj244AIm0E2_AB_CFyXFhZjeiblO1rsCGh08dMZhlZ0BqatswZwJWtUzjAJbJTc-XC1FxmGUqXrOzck-eYt61FdlIdpKYnTKiAQUAa8WJzaXrqPXT43R7886GoJMsRtSEdrk=w175?key=7J0aQj0yT24feaylQkbehQ",
+      "user_answer": "ハンカチ",
+      "correct_answer": "さいふ",
+      "is_correct": false,
+      "options": [
+        "ハンカチ",
+        "さいふ",
+        "てぶくろ"
+      ]
+    },
+    {
+      "index": 2,
+      "question": "2． *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVCDcE0-oiZNuRUfIIclE89G6nHd3W2dXOvEdUadk3cT54SPffrK-gZ24NSbFI-qHjUDIdy03NL1gk2donmvugZLhIZpvPt8izAfjLgrUyFic3CgpCl4iZEy3TLGmQ1BV7cuL_dDDRxpp1i3Ki3aScJBIwaZwDVP2Yd-eZbFuANtEPkuHwK2Ktsy1JZpg6Bjqb8NXJ-jwM9QZfhv=w220?key=7J0aQj0yT24feaylQkbehQ",
+      "user_answer": "スプーン",
+      "correct_answer": "スプーン",
+      "is_correct": true,
+      "options": [
+        "はさみ",
+        "スプーン",
+        "はし"
+      ]
+    },
+    {
+      "index": 3,
+      "question": "3. *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVBnBma4QOMOsTU_A7z7O2VRq8EDosgG8y3V-3w2VDtSdysyvKFThWBZ9SXWcr-419uiC27T_lCGYzAfy6MuKQ99fwna-75jFQ9YGviJRkCzur1jKWA-t3v5frPA4rkT4cHK177tec_-5fxvqHSL9viploEqUVt-OzZga6OhJdriDI4bjCnOumX3JylFM3SbM0YcW1ZBlBp_MEQ=w200?key=7J0aQj0yT24feaylQkbehQ",
+      "user_answer": "かわいい",
+      "correct_answer": "こわい",
+      "is_correct": false,
+      "options": [
+        "こわい",
+        "かわいい",
+        "きらい"
+      ]
+    },
+    {
+      "index": 4,
+      "question": "4. 山田さん は 図書館 で 本 を 借ります。 *",
+      "image": null,
+      "user_answer": "かえります",
+      "correct_answer": "かります",
+      "is_correct": false,
+      "options": [
+        "かえります",
+        "かります",
+        "しります"
+      ]
+    },
+    {
+      "index": 5,
+      "question": "5. すみまあせん、電気 を 消してください *",
+      "image": null,
+      "user_answer": "かして",
+      "correct_answer": "けして",
+      "is_correct": false,
+      "options": [
+        "けして",
+        "かして",
+        "つけて"
+      ]
+    },
+    {
+      "index": 6,
+      "question": "6. 東京 は ふるい町です。 *",
+      "image": null,
+      "user_answer": "軽い",
+      "correct_answer": "古い",
+      "is_correct": false,
+      "options": [
+        "軽い",
+        "重い",
+        "古い"
+      ]
+    },
+    {
+      "index": 7,
+      "question": "7. ここ は きんえんですから、_______   を すっちゃだめです。 *",
+      "image": null,
+      "user_answer": "バイク",
+      "correct_answer": "タバコ",
+      "is_correct": false,
+      "options": [
+        "バイク",
+        "ナイフ",
+        "タバコ"
+      ]
+    },
+    {
+      "index": 8,
+      "question": "８．私 は ひがしぐち に いますよ。 *",
+      "image": null,
+      "user_answer": "西口",
+      "correct_answer": "東口",
+      "is_correct": false,
+      "options": [
+        "南口",
+        "東口",
+        "西口"
+      ]
+    },
+    {
+      "index": 9,
+      "question": "9. これ は お祝い のとき たべる _______です。 *",
+      "image": null,
+      "user_answer": "特別",
+      "correct_answer": "特別",
+      "is_correct": true,
+      "options": [
+        "特別",
+        "べつべつ",
+        "季節"
+      ]
+    },
+    {
+      "index": 10,
+      "question": "10. この町 は ふうけい が うつくしいので、ゆうめいです。 *",
+      "image": null,
+      "user_answer": "寂しい",
+      "correct_answer": "美しい",
+      "is_correct": false,
+      "options": [
+        "寂しい",
+        "美しい",
+        "詳しい"
+      ]
+    },
+    {
+      "index": 11,
+      "question": "11.  プトリさん は きれいで 親切な人です。 *",
+      "image": null,
+      "user_answer": "たいせつな",
+      "correct_answer": "しんせつな",
+      "is_correct": false,
+      "options": [
+        "たいせつな",
+        "きせつな",
+        "しんせつな"
+      ]
+    },
+    {
+      "index": 12,
+      "question": "12.  去年、大学 に そつぎょうしました。 *",
+      "image": null,
+      "user_answer": "らいねん",
+      "correct_answer": "きょねん",
+      "is_correct": false,
+      "options": [
+        "らいねん",
+        "きょねん",
+        "しんねん"
+      ]
+    },
+    {
+      "index": 13,
+      "question": "1.  A : これ は ラーメン いかがですか B :   ______そうです、私 が からいたべもの を たべません。 A : そうですね、からくないよ、たべてみてください。 *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVDa0RLPkJSyov1m7XjAySQvFOABsFu-WXDnt61vH8R-Y9OatE4HO6XONOr6fWkpP8CknSZAM2SWlNHVIaDkHcP_P4_QLCFkX88zEDhkyXYsO2UdZmYvoH698scgJO5JWJFFxAxAet4-q_EGH3rxp3ee886JHkyBJ8NWHOJbTJxLIqnFTiOAEoIFdOcFBQtz_J9yTeIyNYjv3UOL=w200?key=7J0aQj0yT24feaylQkbehQ",
+      "user_answer": "辛",
+      "correct_answer": "辛",
+      "is_correct": true,
+      "options": [
+        "辛",
+        "辛い",
+        "辛く"
+      ]
+    },
+    {
+      "index": 14,
+      "question": "2.  A. はじめまして、たなかです、オースㇳラリア __________   よろしくお願いします。 B. こちらこそ よろしくお願いします *",
+      "image": null,
+      "user_answer": "からきました",
+      "correct_answer": "からきました",
+      "is_correct": true,
+      "options": [
+        "からいきました",
+        "からきました",
+        "からかえりました"
+      ]
+    },
+    {
+      "index": 15,
+      "question": "3.  A.  ______ おめでとう, B. ことし も よろしくね *",
+      "image": null,
+      "user_answer": "あけまして",
+      "correct_answer": "あけまして",
+      "is_correct": true,
+      "options": [
+        "あけまして",
+        "おたんじょうび",
+        "けっこん"
+      ]
+    },
+    {
+      "index": 16,
+      "question": "4.  A. すみません,　これ は______ ですか。 B. はさみです。 *",
+      "image": null,
+      "user_answer": "だれ",
+      "correct_answer": "なん",
+      "is_correct": false,
+      "options": [
+        "だれ",
+        "なん",
+        "どこ"
+      ]
+    },
+    {
+      "index": 17,
+      "question": "5.  A：えとー、なにがありますか B：ちょっと病気です、あたまがいたいんです。 A： _______  かえってくださいよ。 B：はい、おさきにしつれいします。 *",
+      "image": null,
+      "user_answer": "はやく",
+      "correct_answer": "はやく",
+      "is_correct": true,
+      "options": [
+        "はやく",
+        "はやい",
+        "やすい"
+      ]
+    },
+    {
+      "index": 18,
+      "question": "6.  A：このマンガがおもしかったよ、よんだことがありますか B：まだです、あとは ______みます。 *",
+      "image": null,
+      "user_answer": "のんで",
+      "correct_answer": "よんで",
+      "is_correct": false,
+      "options": [
+        "のんで",
+        "よんで",
+        "もって"
+      ]
+    },
+    {
+      "index": 19,
+      "question": "7.  A：ちちのたんじょうびはどうですか B：ケーキが好きなので、ケーキを ______ いいとおもいます。 A：はい、いしょうにつくりましょう。 *",
+      "image": null,
+      "user_answer": "つくった",
+      "correct_answer": "つくると",
+      "is_correct": false,
+      "options": [
+        "つくった",
+        "つくると",
+        "つくる"
+      ]
+    },
+    {
+      "index": 20,
+      "question": "8.  A：会議のまえに、コピーしておいてくださいね。 B：もうおわった、これで _______ ですか A：はい、ありがとう *",
+      "image": null,
+      "user_answer": "いい",
+      "correct_answer": "いい",
+      "is_correct": true,
+      "options": [
+        "いい",
+        "わるい",
+        "まるい"
+      ]
+    },
+    {
+      "index": 21,
+      "question": "9.  A：日本語が上手ですね B：いいえまだまだです。毎日________日本人と日本語ではなしています。 *",
+      "image": null,
+      "user_answer": "できるだけ",
+      "correct_answer": "できるだけ",
+      "is_correct": true,
+      "options": [
+        "できるだけ",
+        "できる",
+        "できない"
+      ]
+    },
+    {
+      "index": 22,
+      "question": "10.   A：毎日元気ですね。何か運動しますか。 B：そうですね。寝る前にできるだけヨガをする__________  *",
+      "image": null,
+      "user_answer": "ことができます。",
+      "correct_answer": "用にしています",
+      "is_correct": false,
+      "options": [
+        "ことができます。",
+        "にしますにします",
+        "用にしています"
+      ]
+    },
+    {
+      "index": 23,
+      "question": "11.   A：ナインさん、もうすぐ帰りますね。 B：帰国する日　は　もうきまりましたか。 A：はい、__________  B：そうですか、あと2週間ですね。 *",
+      "image": null,
+      "user_answer": "来月の十日にかえります。",
+      "correct_answer": "来月の十日にかえります。",
+      "is_correct": true,
+      "options": [
+        "来月の十日にかえります。",
+        "いつでもかえります。",
+        "帰ろうと思います。"
+      ]
+    },
+    {
+      "index": 24,
+      "question": "1. nanya pekerjaan kakak laki laki apa ? *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVAdK6EUHGQmULQF8DxWKLNYuvBSqyUbfbekV5NtKVI4vBROUZmLOQZEhyYkFpBNj2vWUlWHAl1rDKEJGW_EBiftTT26XAp0LKnZG_SQGVUzjxqrMnfewNYd5oxHfw06prjfcRDwl0LE_KrerHN_P8KMgjZ5v4KZODsKE1IP77MM8L3r7ZIE-rbKAFztZdsykW639QFQ9UPphN1z=w220?key=7J0aQj0yT24feaylQkbehQ",
+      "user_answer": "差長",
+      "correct_answer": "先生",
+      "is_correct": false,
+      "options": [
+        "先生",
+        "差長",
+        "彼氏"
+      ]
+    },
+    {
+      "index": 25,
+      "question": "2. Percakapan untuk 2 soal   a. Ada cewe nyuruh bawa sesuatu dari kamar, barang apa yang harus di bawa ? *",
+      "image": null,
+      "user_answer": "本",
+      "correct_answer": "いす",
+      "is_correct": false,
+      "options": [
+        "机",
+        "本",
+        "いす"
+      ]
+    },
+    {
+      "index": 26,
+      "question": "3.   b. Ada berapa kursi ? *",
+      "image": null,
+      "user_answer": "むつ",
+      "correct_answer": "むつ",
+      "is_correct": true,
+      "options": [
+        "むつ",
+        "いつつ",
+        "よつ"
+      ]
+    },
+    {
+      "index": 27,
+      "question": "4. Didapur ada percakapan   Mau di bantu apa ? *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVDSelhRpaaBf8SE45y4_xkSXmud96MZOrgrTkSsfZ_qYqBcCS9u22t5IilFO_3WMJqRTQWaamVTKFmMrBr44e_kqw0sGnNs7AzNDEc1-d412NOXZY2arYdNeDvimXS7bAxc98Cvltsj9uzoQxnFpu1-MWHd3CmFvJN8Bq0IkQMtD2zJIcNWqa278jgPGDGMwPUG5kjpMteH2Ok=w260?key=7J0aQj0yT24feaylQkbehQ",
+      "user_answer": "とうふをとってください",
+      "correct_answer": "やさいをきってください",
+      "is_correct": false,
+      "options": [
+        "やさいをきってください",
+        "にくをきってください",
+        "とうふをとってください"
+      ]
+    },
+    {
+      "index": 28,
+      "question": "5. nenek bertanya ke polisi terkait kendaraan ke TOKYO TOWER   Nenek : 東京に行くにはどのような乗り物が実用的ですか *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVDTlaqWeOFxmMgSKj3ktphyuv0vgvDZxiUOYRODsdOYp8IXrIa9ulNx5xP30J3xswmQWvQKX0wpfN5G5pR1F4D1J5RJvTWo5sSjkFmbUVAmt2DyHtuP3qZ0CeA5nlD6qk8YgRjhiMPqQsebtsRrNPKW2fw_2j9nmwZBplZWe7MxEvqVhYL3gOsxv21x0t5XLlPBYTgkpyPdSRt4=w220?key=7J0aQj0yT24feaylQkbehQ",
+      "user_answer": "オトバイ",
+      "correct_answer": "ちかてつ",
+      "is_correct": false,
+      "options": [
+        "オトバイ",
+        "ふね",
+        "ちかてつ"
+      ]
+    },
+    {
+      "index": 29,
+      "question": "6. Cara belajar bahasa korea lewat apa ? *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVCfmNG74AzCrSe7sWNBFbloaT_ts80SuUf9Abp8dpFiQzCN2dwBhuaQB5SCO3QM4jeYYGE8uE1ALUlFY7zxum_tPUlq0EOdf5BjSrtEgAc-dM1whX2hclOh-wgdTk_V0gHtdCb7wRCwN3BeawpRwFxIfadd5VqoZntmlTUd1BSUYZlwuZ1zmVpaYHle0o57UzKONqXfCiIqBng=w220?key=7J0aQj0yT24feaylQkbehQ",
+      "user_answer": "テレビで韓国のドラマを見る",
+      "correct_answer": "テレビで韓国のドラマを見る",
+      "is_correct": true,
+      "options": [
+        "テレビで韓国のドラマを見る",
+        "本を読む",
+        "夢から学ぶ"
+      ]
+    },
+    {
+      "index": 30,
+      "question": "7. Ada percakapan pesan barang   Barang mau di kirim pada hari apa ? *",
+      "image": null,
+      "user_answer": "土曜日",
+      "correct_answer": "土曜日",
+      "is_correct": true,
+      "options": [
+        "木曜日",
+        "金曜日",
+        "土曜日"
+      ]
+    },
+    {
+      "index": 31,
+      "question": "8. Ada Obrolan terkait VAS Bunga   Vas Bunga dari China dan Jepang ada berapa Buah? *",
+      "image": null,
+      "user_answer": "14",
+      "correct_answer": "16",
+      "is_correct": false,
+      "options": [
+        "14",
+        "16",
+        "17"
+      ]
+    },
+    {
+      "index": 32,
+      "question": "9. ada gambar wadah   pertanyaannya, benda ini di gunakan untuk apa ? *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVClLOZ8nV7IoIFCGDigU36I0jxRo8wzsrKN5HenEVTkUAbmoSs6K_rSxnbgqxPX_-FlXNb7MAJSO59BZaM2ohN0gN0RkytZd_nJ6nrEC3cjCbWZosClmQQlO7l_v8qmVCc9OTjfSclsfq2mLZ0c8kNsguoU4hGRGPcNo6Tr8fxQF7pr174gAmnHXZ2Od4saJcXqeYhb7B5iq0rb=w286?key=7J0aQj0yT24feaylQkbehQ",
+      "user_answer": "untuk tempat Osake",
+      "correct_answer": "untuk tempat Osake",
+      "is_correct": true,
+      "options": [
+        "untuk hiasan kamar",
+        "untuk vas bunga",
+        "untuk tempat Osake"
+      ]
+    },
+    {
+      "index": 33,
+      "question": "10.  pengumuman di toko tentang natal 3 soal   a. 何が売られている? *",
+      "image": null,
+      "user_answer": "おさけ",
+      "correct_answer": "上着",
+      "is_correct": false,
+      "options": [
+        "おさけ",
+        "服",
+        "上着"
+      ]
+    },
+    {
+      "index": 34,
+      "question": "11.    b. sampai jam berapa ? *",
+      "image": null,
+      "user_answer": "7.30",
+      "correct_answer": "7.30",
+      "is_correct": true,
+      "options": [
+        "6.30",
+        "7.30",
+        "8.30"
+      ]
+    },
+    {
+      "index": 35,
+      "question": "12.    c. Untuk membayar nya pakai apa ? *",
+      "image": null,
+      "user_answer": "uang case",
+      "correct_answer": "poincard",
+      "is_correct": false,
+      "options": [
+        "poincard",
+        "uang case",
+        "ATM"
+      ]
+    },
+    {
+      "index": 36,
+      "question": "1.  tentang menu makanan 2 soal   a. Menu apa yg makanannya mengandung daging ? *",
+      "image": null,
+      "user_answer": "豚",
+      "correct_answer": "牛",
+      "is_correct": false,
+      "options": [
+        "牛",
+        "豚",
+        "とり"
+      ]
+    },
+    {
+      "index": 37,
+      "question": "2.    b. 注文したら何がもらえるの? *",
+      "image": null,
+      "user_answer": "プレゼント",
+      "correct_answer": "無料のドリンク",
+      "is_correct": false,
+      "options": [
+        "プレゼント",
+        "無料のドリンク",
+        "食べ物"
+      ]
+    },
+    {
+      "index": 38,
+      "question": "3. Tabel Jadwal KERETA 2 soal   a. kereta nomor berapa yang di tunggu ? *",
+      "image": null,
+      "user_answer": "7",
+      "correct_answer": "7",
+      "is_correct": true,
+      "options": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "index": 39,
+      "question": "4.    b. Dimana menunggu transitnya ? *",
+      "image": null,
+      "user_answer": "のりところ",
+      "correct_answer": "乗り換える",
+      "is_correct": false,
+      "options": [
+        "乗り換える",
+        "えき",
+        "のりところ"
+      ]
+    },
+    {
+      "index": 40,
+      "question": "5. Ada pengumuman 2 soal   a. siapa yang boleh menari ? *",
+      "image": null,
+      "user_answer": "tiga orang",
+      "correct_answer": "semua orang bisa ikut menari",
+      "is_correct": false,
+      "options": [
+        "semua orang bisa ikut menari",
+        "beberapa orang saja",
+        "tiga orang"
+      ]
+    },
+    {
+      "index": 41,
+      "question": "6.    b. supaya tidak sakit bagaimana? *",
+      "image": null,
+      "user_answer": "3",
+      "correct_answer": "3",
+      "is_correct": true,
+      "options": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "index": 42,
+      "question": "7. tentang aktifitas 2 soal   a. sedang ngapain ? *",
+      "image": null,
+      "user_answer": "sedang memasak",
+      "correct_answer": "sedang membaca buku",
+      "is_correct": false,
+      "options": [
+        "sedang membaca koran",
+        "sedang membaca buku",
+        "sedang memasak"
+      ]
+    },
+    {
+      "index": 43,
+      "question": "8.     b. どこで本を読みますか *",
+      "image": null,
+      "user_answer": "クラス",
+      "correct_answer": "家",
+      "is_correct": false,
+      "options": [
+        "公園",
+        "家",
+        "クラス"
+      ]
+    },
+    {
+      "index": 44,
+      "question": "9. terkait rapat 2 soal   a. Kapan rapat di adakan ? *",
+      "image": null,
+      "user_answer": "tgl 21",
+      "correct_answer": "tgl 22",
+      "is_correct": false,
+      "options": [
+        "tgl 21",
+        "tgl 22",
+        "tgl 23"
+      ]
+    },
+    {
+      "index": 45,
+      "question": "10.    b. どこでかいぎしますか？ *",
+      "image": null,
+      "user_answer": "じむしょ",
+      "correct_answer": "かいぎしつ",
+      "is_correct": false,
+      "options": [
+        "じむしょ",
+        "かいぎしつ",
+        "うけつけ"
+      ]
+    },
+    {
+      "index": 46,
+      "question": "11. Terkait toko 2 soal   a. tanggal 31 tutup nya jam berapa ?",
+      "image": null,
+      "user_answer": "9 pagi",
+      "correct_answer": "9 malam",
+      "is_correct": false,
+      "options": [
+        "9 malam",
+        "9 pagi",
+        "10 malam"
+      ]
+    },
+    {
+      "index": 47,
+      "question": "12.    b. tokonya libur kapan ?",
+      "image": null,
+      "user_answer": "tanggal 1",
+      "correct_answer": "tanggal 1",
+      "is_correct": true,
+      "options": [
+        "tanggal 1",
+        "tanggal 2",
+        "tanggal 3"
+      ]
+    }
+]
