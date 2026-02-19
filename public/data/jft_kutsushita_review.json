@@ -1,0 +1,601 @@
+[
+    {
+      "index": 1,
+      "question": "1.  *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVCzmWIxvQjJCZ0GDafCumuUB8Sl0bj26135UiHo-CNm4rEvkqIsk-SBsH5XfwOKO7RDw7fDv_yujkqbrZmvac_76PfRad6-yAsOjnOTGgi-yZOn_k49pjk47zhVs7h5qSHq43rqgMYnIBSv_n_gH2YOdoDg27MStRtDmQoIRe8v0SZcFg5I1b5rNRYMZvBVpJjCSqEYYvqPLB44=w150?key=e-yEr0XhfQHIZg7IstlNBg",
+      "user_answer": "靴下",
+      "correct_answer": "靴下",
+      "is_correct": true,
+      "options": [
+        "靴",
+        "靴下",
+        "辞書"
+      ]
+    },
+    {
+      "index": 2,
+      "question": "2.  *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVAy9flXuqGLzJysEBtanhs54F61GWANIKQ-aHapQ0fp0EFBtgOqBS6-WqkBpKzAjGfRZEfFQIsLl404FThdifVPXLfz4HpZOVe8sCJcqtetpj2XYMoROja_Qt9sK18Cf4DH0bFsByuvh16JhL-jDGQwDfVp3gVw4jJ77DAJ5dydqjDaTI74SnfguTeEITdWk15pw7tObhVdUlHU=w199?key=e-yEr0XhfQHIZg7IstlNBg",
+      "user_answer": "かしゅ",
+      "correct_answer": "かしゅ",
+      "is_correct": true,
+      "options": [
+        "こうちょう",
+        "えいが",
+        "かしゅ"
+      ]
+    },
+    {
+      "index": 3,
+      "question": "3.  *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVCt1LJtbaRaf5RqsM6RxRu7SpbCTDiJCwBiK34e8podrrrlpO0kSmouFPkWrG1UROIXHlBgGvYHRaPY28OSAFRspZzli0g-aaoDP7Sl5THHHxOK0pYeRqSLfqAv0uSZnqEVb4d_rY8MB3YSEcV_LMzYPD1ovx2zldrPGnX8EHPt5ercsduwFB446eVF9cck0tgQWHEyuXtUq3gZ=w220?key=e-yEr0XhfQHIZg7IstlNBg",
+      "user_answer": "およぎます",
+      "correct_answer": "およぎます",
+      "is_correct": true,
+      "options": [
+        "さんぽします",
+        "およぎます",
+        "けんがくします"
+      ]
+    },
+    {
+      "index": 4,
+      "question": "4.  日本 の ラ－メン は________です *",
+      "image": null,
+      "user_answer": "おいしい",
+      "correct_answer": "おいしい",
+      "is_correct": true,
+      "options": [
+        "からい",
+        "おいしい",
+        "べんり"
+      ]
+    },
+    {
+      "index": 5,
+      "question": "5. 道 に まよって、１０分ぐらい_________ *",
+      "image": null,
+      "user_answer": "おくれます",
+      "correct_answer": "おくれます",
+      "is_correct": true,
+      "options": [
+        "かかります",
+        "おくれます",
+        "かえります"
+      ]
+    },
+    {
+      "index": 6,
+      "question": "6. このきょうしつで、男 のほう が おおいです *",
+      "image": null,
+      "user_answer": "おとこ",
+      "correct_answer": "おとこ",
+      "is_correct": true,
+      "options": [
+        "おんな",
+        "おとこ",
+        "おばあさん"
+      ]
+    },
+    {
+      "index": 7,
+      "question": "7.  けっこんしき の__________に おかね を あげます *",
+      "image": null,
+      "user_answer": "おいわい",
+      "correct_answer": "おいわい",
+      "is_correct": true,
+      "options": [
+        "あさごはん",
+        "おいのり",
+        "おいわい"
+      ]
+    },
+    {
+      "index": 8,
+      "question": "8.  雨 が ふったら、イベント が 中止されます *",
+      "image": null,
+      "user_answer": "ちゅうし",
+      "correct_answer": "ちゅうし",
+      "is_correct": true,
+      "options": [
+        "ちゅうし",
+        "ちょうし",
+        "なかとまる"
+      ]
+    },
+    {
+      "index": 9,
+      "question": "9.  同じくつ を 買ってください *",
+      "image": null,
+      "user_answer": "おなじ",
+      "correct_answer": "おなじ",
+      "is_correct": true,
+      "options": [
+        "おなじ",
+        "なんじ",
+        "たからくじ"
+      ]
+    },
+    {
+      "index": 10,
+      "question": "10.  _______,でくすり を もらってから、行きます *",
+      "image": null,
+      "user_answer": "病院",
+      "correct_answer": "病院",
+      "is_correct": true,
+      "options": [
+        "公園",
+        "郵便",
+        "病院"
+      ]
+    },
+    {
+      "index": 11,
+      "question": "11.  A : ダダンさん、朝 は パン を たべますか B : はい、でもときどきご飯 を ______ *",
+      "image": null,
+      "user_answer": "食べます",
+      "correct_answer": "食べます",
+      "is_correct": true,
+      "options": [
+        "食べます",
+        "飲みます",
+        "洗います"
+      ]
+    },
+    {
+      "index": 12,
+      "question": "12. へや の _______に 入ってください *",
+      "image": null,
+      "user_answer": "中",
+      "correct_answer": "中",
+      "is_correct": true,
+      "options": [
+        "中",
+        "外",
+        "上"
+      ]
+    },
+    {
+      "index": 13,
+      "question": "1.  A : 今日 は いい天気ですね B : はい、すずしくて____________ *",
+      "image": null,
+      "user_answer": "気持ち が いいです",
+      "correct_answer": "気持ち が いいです",
+      "is_correct": true,
+      "options": [
+        "気持ち が 悪いです",
+        "気持ち が いいです",
+        "気持ち が よくないです"
+      ]
+    },
+    {
+      "index": 14,
+      "question": "2.  A : さいふ が____________ B : かばん の なか に 見ましたか A : はい、見ました *",
+      "image": null,
+      "user_answer": "ありません",
+      "correct_answer": "ありません",
+      "is_correct": true,
+      "options": [
+        "ありません",
+        "かいます",
+        "いません"
+      ]
+    },
+    {
+      "index": 15,
+      "question": "3.  A : けっこん の パーティー へ どんな服 を 着れば いいですか？____________ B : ワンピース の ふくとかスーツ を 着たほうが いいですよ。しろいふく は だめです。 *",
+      "image": null,
+      "user_answer": "教えてもらえませんか",
+      "correct_answer": "教えてもらえませんか",
+      "is_correct": true,
+      "options": [
+        "買ってもらえませんか",
+        "教えてもらえませんか",
+        "食べてもらえませんか"
+      ]
+    },
+    {
+      "index": 16,
+      "question": "4.  A : コピー が 終わりましたか？ B : あと１５分ぐらい____________ A : はい、つぎもってきてください *",
+      "image": null,
+      "user_answer": "おわりそうです",
+      "correct_answer": "おわりそうです",
+      "is_correct": true,
+      "options": [
+        "おわるそうです",
+        "おわりそうです",
+        "おわるようです"
+      ]
+    },
+    {
+      "index": 17,
+      "question": "5.  A :すみません、みどり駅まで＿＿＿＿＿？ B :１８０円です。 *",
+      "image": null,
+      "user_answer": "いくらですか",
+      "correct_answer": "いくらですか",
+      "is_correct": true,
+      "options": [
+        "どうですか",
+        "なんじですか",
+        "いくらですか"
+      ]
+    },
+    {
+      "index": 18,
+      "question": "6.  A : 今度、会社 の 人 は ベトナム人 だけど、ベトナム の 料理 の おすすめ は ありますか？ B : パインカンという ベトナム の うどん が おいしいですよ。____________食べてみてください A : はい、食べてみます *",
+      "image": null,
+      "user_answer": "よかったら",
+      "correct_answer": "よかったら",
+      "is_correct": true,
+      "options": [
+        "げんきです",
+        "いい天気なら",
+        "よかったら"
+      ]
+    },
+    {
+      "index": 19,
+      "question": "7.  A : 昨日、やすんだそうですね。 B : はい、かぜ と 熱 が あったので、、 A :でも、今日 は だいじょうぶですか？ B : はい、だいじょうぶです。____________なります *",
+      "image": null,
+      "user_answer": "元気に",
+      "correct_answer": "元気に",
+      "is_correct": true,
+      "options": [
+        "悪く",
+        "天気に",
+        "元気に"
+      ]
+    },
+    {
+      "index": 20,
+      "question": "8.   A : なにしているんですか？ B : ネットショップ で もの を 見ています、前 の はこ われたので、また買いたいです B : ____________。はやく買ったほう が いいですよ *",
+      "image": null,
+      "user_answer": "それはいいですね",
+      "correct_answer": "それ は こまりましたね",
+      "is_correct": false,
+      "options": [
+        "それは",
+        "それはいいですね",
+        "それ は こまりましたね"
+      ]
+    },
+    {
+      "index": 21,
+      "question": "9.  A：またきてくださいね、____________ B：はい、ありがとうございました。 *",
+      "image": null,
+      "user_answer": "きをつけて",
+      "correct_answer": "きをつけて",
+      "is_correct": true,
+      "options": [
+        "いいえげんきです",
+        "きをつけて",
+        "おかげさまで"
+      ]
+    },
+    {
+      "index": 22,
+      "question": "10.   A：今日 の 夜、カラオケ に 行きましょうか B：いいですね。 A：７じ に いきましょう。 B：はい、わかりました。____________ *",
+      "image": null,
+      "user_answer": "おつかれさま",
+      "correct_answer": "たのしみです",
+      "is_correct": false,
+      "options": [
+        "きをつけて",
+        "おつかれさま",
+        "たのしみです"
+      ]
+    },
+    {
+      "index": 23,
+      "question": "11.   A : どうやってきりますか B : かたぐらいまできって、まえがみが____________してください。 *",
+      "image": null,
+      "user_answer": "ながく",
+      "correct_answer": "みじかく",
+      "is_correct": false,
+      "options": [
+        "おもく",
+        "ながく",
+        "みじかく"
+      ]
+    },
+    {
+      "index": 24,
+      "question": "1.  A：クリスさん、いつもカレーのりょうりかた は どうですか B :トマトソース を つかって、ワイン も 使います。たなかさん は どうですか。 A：私 は チョコレート を 使います、おいしいですよ。 B：そうですか。わたし もそ の つくりかた を してみます。    クリスさんは何を使って料理しますか？ *",
+      "image": null,
+      "user_answer": "ワイン",
+      "correct_answer": "チョコレート",
+      "is_correct": false,
+      "options": [
+        "トマトソース",
+        "ワイン",
+        "チョコレート"
+      ]
+    },
+    {
+      "index": 25,
+      "question": "2.  A : やまださん、なつやすみ は どこ に いきますか B : やま に のぼります。ゆみこさん は どうですか。 A : わたし は かいしゃ の ひととうみ に りよこうします。 B : いいですね。   ユミコさんはどこへ行きますか？ *",
+      "image": null,
+      "user_answer": "庭",
+      "correct_answer": "海",
+      "is_correct": false,
+      "options": [
+        "庭",
+        "山",
+        "海"
+      ]
+    },
+    {
+      "index": 26,
+      "question": "3.  A : アリさんいま、どこ に すんでいますか B : えきからちかくて、みせ が いっぱいところ に すんでいます。べんりだけどみどり が ないので、みどり がおおい ところ に すみたいです。   今アリさんはどこに住んでいますか？ *",
+      "image": null,
+      "user_answer": "とかい、おおい",
+      "correct_answer": "とかい、みどりがすくない",
+      "is_correct": false,
+      "options": [
+        "とかい、おおい",
+        "むら、みどりがすくない",
+        "とかい、みどりがすくない"
+      ]
+    },
+    {
+      "index": 27,
+      "question": "4.               スーパー の お知らせです スーパー は ８かいまでです、１かいから６かいまで は せいかつしょうひんです。レストラン が ７かい に あります。８かい は ちゅしゃじょうです。ごご８じになったら、かいだんやエスカレーター が つかえない の で エ ルベーター を つかってください   レストランは何回にありますか *",
+      "image": null,
+      "user_answer": "３かい",
+      "correct_answer": "７かい",
+      "is_correct": false,
+      "options": [
+        "７かい",
+        "８かい",
+        "３かい"
+      ]
+    },
+    {
+      "index": 28,
+      "question": "5. 午後８時 は 何 を きますか？ *",
+      "image": null,
+      "user_answer": "かい",
+      "correct_answer": "エレベーター",
+      "is_correct": false,
+      "options": [
+        "エレベーター",
+        "カイダン",
+        "かい"
+      ]
+    },
+    {
+      "index": 29,
+      "question": "6.                     さいがいたいさく!! 10月 の 5日 に 開催しますので、参加希望 の 方 は 10月2日ま で にご 登録 の 上、メール に てご登録ください。   さいがいたいさく は いつかい さいされますか？ *",
+      "image": null,
+      "user_answer": "５月１０日",
+      "correct_answer": "１０月５日",
+      "is_correct": false,
+      "options": [
+        "１５月３日",
+        "１０月５日",
+        "５月１０日"
+      ]
+    },
+    {
+      "index": 30,
+      "question": "7. 登録方法は? ada gambar nanti disini *",
+      "image": null,
+      "user_answer": "gambar orang main hp mendaftar email",
+      "correct_answer": "gambar orang di depan lapton mendaftar email",
+      "is_correct": false,
+      "options": [
+        "gambar orang main hp mendaftar email",
+        "gambar orang di depan lapton mendaftar email",
+        "gambar orang langsung mendaftar"
+      ]
+    },
+    {
+      "index": 31,
+      "question": "8.  先生: ほんやへいって、青いボールペンを４ほんとA４のかみを２５まいかってください 学生: はいわかりました   どのボールペンを買いますか？ *",
+      "image": null,
+      "user_answer": "しろい",
+      "correct_answer": "あおい",
+      "is_correct": false,
+      "options": [
+        "しろい",
+        "くろい",
+        "あおい"
+      ]
+    },
+    {
+      "index": 32,
+      "question": "9.  かみはなんまいですか？ *",
+      "image": null,
+      "user_answer": "２５まい",
+      "correct_answer": "２５まい",
+      "is_correct": true,
+      "options": [
+        "２０まい",
+        "２５まい",
+        "２３まい"
+      ]
+    },
+    {
+      "index": 33,
+      "question": "10.  penjual: いらしゃいませ pembeli :スチーキのにがありますか？ penjual :はいあります pembeli: いくらですか？ penjual :これは８００円です、やわらかくておいしいにくです。５００円のにくもあります pembeli:やすいのほうを２つください penjual :もっとやすいにくもありますよ、バーベキューのが３８０円です pembeli:今日はスチーキにくだけでいいです。   肉をどれくらい買うつもりですか？ *",
+      "image": null,
+      "user_answer": "８００円",
+      "correct_answer": "５００円",
+      "is_correct": false,
+      "options": [
+        "５００円",
+        "８００円",
+        "３８０円"
+      ]
+    },
+    {
+      "index": 34,
+      "question": "11.  A: すみません、南公園にいきたいんですが。どうやっていきますか   B:ここからひかりえきまで歩いてついたらバスがあります。   A: はい、わかりました   南公園で何をのるますか？ *",
+      "image": null,
+      "user_answer": "オトバイ",
+      "correct_answer": "バス",
+      "is_correct": false,
+      "options": [
+        "オトバイ",
+        "自転車",
+        "バス"
+      ]
+    },
+    {
+      "index": 35,
+      "question": "1. untuk 2 Soal   フィトリさん 、      今日の昼ご飯をいしょにたべましょうか、１２時に会社の玄関前にあいましょう   a. Jam berapa bertemu nya ? *",
+      "image": null,
+      "user_answer": "１２時",
+      "correct_answer": "１２時",
+      "is_correct": true,
+      "options": [
+        "１３時",
+        "１２時",
+        "１５時"
+      ]
+    },
+    {
+      "index": 36,
+      "question": "2.     b. どこ で あいますか *",
+      "image": null,
+      "user_answer": "公園の玄関 に 合います",
+      "correct_answer": "会社 の 玄関 に 合います",
+      "is_correct": false,
+      "options": [
+        "事務所の玄関 に 合います",
+        "会社 の 玄関 に 合います",
+        "公園の玄関 に 合います"
+      ]
+    },
+    {
+      "index": 37,
+      "question": "3. untuk 2 soal    はじめまして、モーです. ベトナムからきました. 日本には 3年前来ました。2年間せんもんがっこう で べんきょうして、一年間ここ で しごとしています。 私 は アニメ が 好きで、休み の 日 に いつも みます。   a. SAUDARA MO- SUDAH BERAPA LAMA DI JEPANG? *",
+      "image": null,
+      "user_answer": "二年間",
+      "correct_answer": "三年間",
+      "is_correct": false,
+      "options": [
+        "二年間",
+        "一年間",
+        "三年間"
+      ]
+    },
+    {
+      "index": 38,
+      "question": "4.      b. モー さんの 趣味 は なんですか. *",
+      "image": null,
+      "user_answer": "仕事",
+      "correct_answer": "アニメを見ます",
+      "is_correct": false,
+      "options": [
+        "旅行",
+        "仕事",
+        "アニメを見ます"
+      ]
+    },
+    {
+      "index": 39,
+      "question": "5.  untuk 2 soal   工場 の ルール 1．シャツはズボンの中に入れてください。くびにタオルをかけないで。 2．どうぐはつかったら、いつもおいているばしょにかえしてください。   a. CARA BERPAKAIANNYA BAGAIMANA? *",
+      "image": null,
+      "user_answer": "peralatan dimasukan ke tas, tanpa memakai handuk di kepala",
+      "correct_answer": "kemeja dimasukan kedalam celana, tanpa meletakan handuk di leher",
+      "is_correct": false,
+      "options": [
+        "peralatan dimasukan ke tas, tanpa memakai handuk di kepala",
+        "kaos di masukan kedalam celana, tanpa meletakan handuk di leher",
+        "kemeja dimasukan kedalam celana, tanpa meletakan handuk di leher"
+      ]
+    },
+    {
+      "index": 40,
+      "question": "6.    b. UNTUK KESELAMATAN KERJA HARUS BAGAIMANA? *",
+      "image": null,
+      "user_answer": "シャツはズボンの中に入れて",
+      "correct_answer": "どうぐをつかったら、もとのところにかえします",
+      "is_correct": false,
+      "options": [
+        "くびにタオルをかけます",
+        "シャツはズボンの中に入れて",
+        "どうぐをつかったら、もとのところにかえします"
+      ]
+    },
+    {
+      "index": 41,
+      "question": "7.  untuk 2 soal   みなみこうえんいきバス   a. BUS TUJUAN KE MANA ? *",
+      "image": "https://lh7-rt.googleusercontent.com/formsz/AN7BsVDSY0uTXqkCKioN8HhwvoWmW17ahSiJwUwXm4WaeUb_cfBF5ZeH0qbySu12vNgbKrND27mOLSQ483Q1kCc6UHDYTO9W4bMgV38LVyaqIjy1URBH2Zg1tJ3TlxvVYvwu6h5RwN6RrleQsICWkGVcg9khYvgfBDb2SXN2I51XRTnCQLFIkyG-UL3GpYw2SBzp5rpUn2eQKpQLP2k=w312?key=e-yEr0XhfQHIZg7IstlNBg",
+      "user_answer": "ひがしこうえん",
+      "correct_answer": "みなみこうえん",
+      "is_correct": false,
+      "options": [
+        "みなみこうえん",
+        "ひがしこうえん",
+        "きたこうえん"
+      ]
+    },
+    {
+      "index": 42,
+      "question": "8.    b. PADA JAM 11 BUS DATANG PADA MENIT BERAPA?",
+      "image": null,
+      "user_answer": "11.16",
+      "correct_answer": "11.17",
+      "is_correct": false,
+      "options": [
+        "11.15",
+        "11.16",
+        "11.17"
+      ]
+    },
+    {
+      "index": 43,
+      "question": "9. untuk 2 soal   ギターきょうしつ # 毎週の木曜日です。19：００－20：００ # さんかしたい人はメールでおくってください。   a. KELAS GITAR BUKA PADA HARI APA ?",
+      "image": null,
+      "user_answer": "水曜日",
+      "correct_answer": "木曜日",
+      "is_correct": false,
+      "options": [
+        "水曜日",
+        "木曜日",
+        "金曜日"
+      ]
+    },
+    {
+      "index": 44,
+      "question": "10.   b. BAGAIMANA CARA BERGABUNGNYA ?",
+      "image": null,
+      "user_answer": "ラインをする",
+      "correct_answer": "メールする",
+      "is_correct": false,
+      "options": [
+        "メールする",
+        "ラインをする",
+        "よやくする"
+      ]
+    },
+    {
+      "index": 45,
+      "question": "11. untuk 2 soal   \"PAMFLET OBAT MATA GATAL\" いしゃにそうだんするひと: 1. めがひどくかわくひと 2. 薬アレルギー人   a. MEMBAHAS TENTANG OBAT APA ?",
+      "image": null,
+      "user_answer": "めがかゆいくすり",
+      "correct_answer": "めがかゆいくすり",
+      "is_correct": true,
+      "options": [
+        "めがかゆいくすり",
+        "あたまくすり",
+        "おなかくすり"
+      ]
+    },
+    {
+      "index": 46,
+      "question": "12.   b. ORANG YG ALERGI OBAT SEBAIKNYA BAGAIMANA?",
+      "image": null,
+      "user_answer": "ねる",
+      "correct_answer": "いしゃにそうだんする",
+      "is_correct": false,
+      "options": [
+        "牛乳を飲む",
+        "ねる",
+        "いしゃにそうだんする"
+      ]
+    }
+  ]
+}

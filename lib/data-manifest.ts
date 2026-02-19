@@ -42,7 +42,23 @@ export const quizFiles: QuizFile[] = [
     label: "Kuroi Review Set",
     fileName: "jft_kuroi_review.json",
     description: "Kisi-kisi review questions for quick drills."
+  },
+  {
+    id: "kutsushita-review",
+    mode: "kisi-kisi",
+    label: "Kutsushita Review Set",
+    fileName: "jft_kutsushita_review.json",
+    description: "Kisi-kisi review questions for quick drills."
+  },
+  {
+    id: "okimasu-review",
+    mode: "kisi-kisi",
+    label: "Okimasu Review Set",
+    fileName: "jft_okimasu_review.json",
+    description: "Kisi-kisi review questions for quick drills."
   }
+];
+];
 ];
 
 export function getQuizFilesByMode(mode: QuizMode) {
