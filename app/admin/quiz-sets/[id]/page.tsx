@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
+
 "use client";
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Pencil, X } from "lucide-react";
+import { Check, Circle, CircleCheck, CircleX, Pencil, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -34,6 +36,8 @@ export default function AdminQuizSetDetailPage() {
   const [message, setMessage] = useState<string | null>(null);
   const [modal, setModal] = useState<ModalState>(null);
   const [isSaving, setIsSaving] = useState(false);
+  const [isReviewMode, setIsReviewMode] = useState(false);
+  const [reviewAnswers, setReviewAnswers] = useState<Record<string, string | null>>({});
   const [draftValue, setDraftValue] = useState("");
   const [draftOption, setDraftOption] = useState<QuizOption | null>(null);
   const [draftQuestion, setDraftQuestion] = useState<QuizQuestion | null>(null);
@@ -62,6 +66,10 @@ export default function AdminQuizSetDetailPage() {
     };
     load();
   }, [quizSetId]);
+
+  useEffect(() => {
+    setReviewAnswers({});
+  }, [quizSetId, questions.length]);
 
   const maxOptions = questions.reduce((max, question) => {
     return Math.max(max, question.options.length);
@@ -246,6 +254,13 @@ export default function AdminQuizSetDetailPage() {
     }
   };
 
+  const handleReviewAnswer = (questionId: string, optionId: string) => {
+    setReviewAnswers((prev) => ({
+      ...prev,
+      [questionId]: optionId
+    }));
+  };
+
   if (!isSupabaseConfigured) {
     return (
       <Card>
@@ -373,143 +388,250 @@ export default function AdminQuizSetDetailPage() {
       </Card>
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold">Questions</h2>
+        <div className="flex items-center gap-2">
+          <Button
+            size="sm"
+            variant={isReviewMode ? "default" : "outline"}
+            onClick={() => setIsReviewMode((prev) => !prev)}
+          >
+            {isReviewMode ? "Table mode" : "Review mode"}
+          </Button>
+          {isReviewMode ? (
+            <Button size="sm" variant="outline" onClick={() => setReviewAnswers({})}>
+              Reset review
+            </Button>
+          ) : null}
+        </div>
       </div>
       {message ? <p className="text-sm text-muted-foreground">{message}</p> : null}
-      <Card>
-        <CardContent className="overflow-x-auto pt-6">
-          <table className="w-full min-w-[1200px] text-sm">
-            <thead>
-              <tr className="border-b border-border text-left text-xs uppercase tracking-wide text-muted-foreground">
-                <th className="py-2 pr-3">No</th>
-                <th className="py-2 pr-3">Section</th>
-                <th className="py-2 pr-3">Prompt</th>
-                <th className="py-2 pr-3">Answer ID</th>
-                <th className="py-2 pr-3">Image</th>
-                {Array.from({ length: maxOptions }).map((_, optionIndex) => (
-                  <th key={`head-option-${optionIndex}`} className="py-2 pr-3">
-                    Option {String.fromCharCode(65 + optionIndex)}
-                  </th>
-                ))}
-                <th className="py-2 pr-3">Row action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {questions.map((question, questionIndex) => (
-                <tr key={question.id} className="border-b border-border/60 align-top">
-                  <td className="py-3 pr-3 font-medium">{questionIndex + 1}</td>
-                  <td className="py-3 pr-3">
-                    <div
-                      role="button"
-                      tabIndex={0}
-                      className={editableCellClass}
-                      onClick={() => openQuestionFieldModal(questionIndex, "section")}
-                      onKeyDown={(event) =>
-                        onKeyActivate(event, () =>
-                          openQuestionFieldModal(questionIndex, "section")
-                        )
-                      }
-                    >
-                      <p>{question.section}</p>
-                      <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
-                        <Pencil className="h-3 w-3" />
-                      </span>
-                    </div>
-                  </td>
-                  <td className="py-3 pr-3">
-                    <div
-                      role="button"
-                      tabIndex={0}
-                      className={editableCellClass}
-                      onClick={() => openQuestionFieldModal(questionIndex, "prompt")}
-                      onKeyDown={(event) =>
-                        onKeyActivate(event, () =>
-                          openQuestionFieldModal(questionIndex, "prompt")
-                        )
-                      }
-                    >
-                      <p className="line-clamp-3 max-w-md">{question.prompt}</p>
-                      <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
-                        <Pencil className="h-3 w-3" />
-                      </span>
-                    </div>
-                  </td>
-                  <td className="py-3 pr-3">
-                    <div
-                      role="button"
-                      tabIndex={0}
-                      className={editableCellClass}
-                      onClick={() => openQuestionFieldModal(questionIndex, "answerId")}
-                      onKeyDown={(event) =>
-                        onKeyActivate(event, () =>
-                          openQuestionFieldModal(questionIndex, "answerId")
-                        )
-                      }
-                    >
-                      <p>{question.answerId}</p>
-                      <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
-                        <Pencil className="h-3 w-3" />
-                      </span>
-                    </div>
-                  </td>
-                  <td className="py-3 pr-3">
-                    <div
-                      role="button"
-                      tabIndex={0}
-                      className={editableCellClass}
-                      onClick={() => openQuestionFieldModal(questionIndex, "imageUrl")}
-                      onKeyDown={(event) =>
-                        onKeyActivate(event, () =>
-                          openQuestionFieldModal(questionIndex, "imageUrl")
-                        )
-                      }
-                    >
-                      <p className="max-w-[180px] truncate">{question.imageUrl || "-"}</p>
-                      <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
-                        <Pencil className="h-3 w-3" />
-                      </span>
-                    </div>
-                  </td>
-                  {Array.from({ length: maxOptions }).map((_, optionIndex) => {
-                    const option = question.options[optionIndex];
-                    return (
-                      <td key={`${question.id}-option-${optionIndex}`} className="py-3 pr-3">
-                        {option ? (
-                          <div
-                            role="button"
-                            tabIndex={0}
-                            className={editableCellClass}
-                            onClick={() => openQuestionOptionModal(questionIndex, optionIndex)}
-                            onKeyDown={(event) =>
-                              onKeyActivate(event, () =>
-                                openQuestionOptionModal(questionIndex, optionIndex)
-                              )
-                            }
-                          >
-                            <p className="line-clamp-3 max-w-[190px]">
-                              <span className="font-semibold">{option.id}. </span>
-                              {option.text}
-                            </p>
-                            <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
-                              <Pencil className="h-3 w-3" />
-                            </span>
-                          </div>
+      {isReviewMode ? (
+        <div className="space-y-4">
+          {questions.map((question, questionIndex) => {
+            const selectedAnswer = reviewAnswers[question.id] ?? null;
+            const isAnswered = Boolean(selectedAnswer);
+            const isCorrect = selectedAnswer === question.answerId;
+            const correctOption = question.options.find(
+              (option) => option.id === question.answerId
+            );
+
+            return (
+              <Card key={question.id} className="border-border/70">
+                <CardContent className="space-y-4 p-5">
+                  <div className="flex items-center justify-between">
+                    <div className="inline-flex items-center gap-2 text-sm font-semibold">
+                      {isAnswered ? (
+                        isCorrect ? (
+                          <CircleCheck className="h-4 w-4 text-success" />
                         ) : (
-                          <span className="text-muted-foreground">-</span>
-                        )}
-                      </td>
-                    );
-                  })}
-                  <td className="py-3 pr-3">
-                    <Button size="sm" onClick={() => openQuestionRowModal(questionIndex)}>
-                      Edit row
-                    </Button>
-                  </td>
+                          <CircleX className="h-4 w-4 text-destructive" />
+                        )
+                      ) : (
+                        <Circle className="h-4 w-4 text-muted-foreground" />
+                      )}
+                      <span>
+                        {questionIndex + 1}. <span className="text-destructive">*</span>
+                      </span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">
+                      {isAnswered && isCorrect ? "5/5" : "0/5"}
+                    </span>
+                  </div>
+
+                  <p className="text-sm leading-relaxed">{question.prompt}</p>
+
+                  {question.imageUrl ? (
+                    <img
+                      src={question.imageUrl}
+                      alt={`Question ${questionIndex + 1}`}
+                      className="max-h-64 w-auto rounded border border-border"
+                    />
+                  ) : null}
+
+                  <div className="space-y-2">
+                    {question.options.map((option) => {
+                      const isSelected = selectedAnswer === option.id;
+                      const selectedIsWrong = isSelected && isAnswered && !isCorrect;
+                      const selectedIsCorrect = isSelected && isAnswered && isCorrect;
+
+                      return (
+                        <button
+                          key={`${question.id}-${option.id}`}
+                          type="button"
+                          onClick={() => handleReviewAnswer(question.id, option.id)}
+                          className={[
+                            "flex w-full items-center justify-between rounded-md border px-3 py-2 text-left text-sm transition-colors",
+                            selectedIsCorrect
+                              ? "border-success/45 bg-success/15 text-foreground"
+                              : selectedIsWrong
+                                ? "border-destructive/45 bg-destructive/10 text-foreground"
+                                : "border-border bg-background hover:bg-muted/40"
+                          ].join(" ")}
+                        >
+                          <span className="inline-flex items-center gap-2">
+                            <Circle className="h-4 w-4 text-muted-foreground" />
+                            <span>{option.text}</span>
+                          </span>
+                          {selectedIsCorrect ? (
+                            <Check className="h-4 w-4 text-success" />
+                          ) : selectedIsWrong ? (
+                            <X className="h-4 w-4 text-destructive" />
+                          ) : null}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {isAnswered && !isCorrect && correctOption ? (
+                    <div className="space-y-2 rounded-md border border-success/35 bg-success/10 p-3">
+                      <p className="text-sm font-medium text-success">Jawaban yang benar</p>
+                      <div className="inline-flex items-center gap-2 text-sm">
+                        <Circle className="h-4 w-4 text-success" />
+                        <span>{correctOption.text}</span>
+                      </div>
+                    </div>
+                  ) : null}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+      ) : (
+        <Card>
+          <CardContent className="overflow-x-auto pt-6">
+            <table className="w-full min-w-[1200px] text-sm">
+              <thead>
+                <tr className="border-b border-border text-left text-xs uppercase tracking-wide text-muted-foreground">
+                  <th className="py-2 pr-3">No</th>
+                  <th className="py-2 pr-3">Section</th>
+                  <th className="py-2 pr-3">Prompt</th>
+                  <th className="py-2 pr-3">Answer ID</th>
+                  <th className="py-2 pr-3">Image</th>
+                  {Array.from({ length: maxOptions }).map((_, optionIndex) => (
+                    <th key={`head-option-${optionIndex}`} className="py-2 pr-3">
+                      Option {String.fromCharCode(65 + optionIndex)}
+                    </th>
+                  ))}
+                  <th className="py-2 pr-3">Row action</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </CardContent>
-      </Card>
+              </thead>
+              <tbody>
+                {questions.map((question, questionIndex) => (
+                  <tr key={question.id} className="border-b border-border/60 align-top">
+                    <td className="py-3 pr-3 font-medium">{questionIndex + 1}</td>
+                    <td className="py-3 pr-3">
+                      <div
+                        role="button"
+                        tabIndex={0}
+                        className={editableCellClass}
+                        onClick={() => openQuestionFieldModal(questionIndex, "section")}
+                        onKeyDown={(event) =>
+                          onKeyActivate(event, () =>
+                            openQuestionFieldModal(questionIndex, "section")
+                          )
+                        }
+                      >
+                        <p>{question.section}</p>
+                        <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
+                          <Pencil className="h-3 w-3" />
+                        </span>
+                      </div>
+                    </td>
+                    <td className="py-3 pr-3">
+                      <div
+                        role="button"
+                        tabIndex={0}
+                        className={editableCellClass}
+                        onClick={() => openQuestionFieldModal(questionIndex, "prompt")}
+                        onKeyDown={(event) =>
+                          onKeyActivate(event, () =>
+                            openQuestionFieldModal(questionIndex, "prompt")
+                          )
+                        }
+                      >
+                        <p className="line-clamp-3 max-w-md">{question.prompt}</p>
+                        <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
+                          <Pencil className="h-3 w-3" />
+                        </span>
+                      </div>
+                    </td>
+                    <td className="py-3 pr-3">
+                      <div
+                        role="button"
+                        tabIndex={0}
+                        className={editableCellClass}
+                        onClick={() => openQuestionFieldModal(questionIndex, "answerId")}
+                        onKeyDown={(event) =>
+                          onKeyActivate(event, () =>
+                            openQuestionFieldModal(questionIndex, "answerId")
+                          )
+                        }
+                      >
+                        <p>{question.answerId}</p>
+                        <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
+                          <Pencil className="h-3 w-3" />
+                        </span>
+                      </div>
+                    </td>
+                    <td className="py-3 pr-3">
+                      <div
+                        role="button"
+                        tabIndex={0}
+                        className={editableCellClass}
+                        onClick={() => openQuestionFieldModal(questionIndex, "imageUrl")}
+                        onKeyDown={(event) =>
+                          onKeyActivate(event, () =>
+                            openQuestionFieldModal(questionIndex, "imageUrl")
+                          )
+                        }
+                      >
+                        <p className="max-w-[180px] truncate">{question.imageUrl || "-"}</p>
+                        <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
+                          <Pencil className="h-3 w-3" />
+                        </span>
+                      </div>
+                    </td>
+                    {Array.from({ length: maxOptions }).map((_, optionIndex) => {
+                      const option = question.options[optionIndex];
+                      return (
+                        <td key={`${question.id}-option-${optionIndex}`} className="py-3 pr-3">
+                          {option ? (
+                            <div
+                              role="button"
+                              tabIndex={0}
+                              className={editableCellClass}
+                              onClick={() => openQuestionOptionModal(questionIndex, optionIndex)}
+                              onKeyDown={(event) =>
+                                onKeyActivate(event, () =>
+                                  openQuestionOptionModal(questionIndex, optionIndex)
+                                )
+                              }
+                            >
+                              <p className="line-clamp-3 max-w-[190px]">
+                                <span className="font-semibold">{option.id}. </span>
+                                {option.text}
+                              </p>
+                              <span className="absolute right-1 top-1 hidden h-5 w-5 items-center justify-center rounded border border-border/70 bg-background text-muted-foreground opacity-0 transition group-hover:opacity-100 md:flex">
+                                <Pencil className="h-3 w-3" />
+                              </span>
+                            </div>
+                          ) : (
+                            <span className="text-muted-foreground">-</span>
+                          )}
+                        </td>
+                      );
+                    })}
+                    <td className="py-3 pr-3">
+                      <Button size="sm" onClick={() => openQuestionRowModal(questionIndex)}>
+                        Edit row
+                      </Button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </CardContent>
+        </Card>
+      )}
 
       {modal ? (
         <div className="fixed inset-0 z-[80] overflow-y-auto bg-black/70 p-4 backdrop-blur-sm">
