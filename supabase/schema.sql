@@ -94,10 +94,54 @@ create policy "quiz_sets_read_public"
   to anon, authenticated
   using (true);
 
+drop policy if exists "quiz_sets_insert_admin_client" on public.quiz_sets;
+create policy "quiz_sets_insert_admin_client"
+  on public.quiz_sets
+  for insert
+  to anon, authenticated
+  with check (true);
+
+drop policy if exists "quiz_sets_update_admin_client" on public.quiz_sets;
+create policy "quiz_sets_update_admin_client"
+  on public.quiz_sets
+  for update
+  to anon, authenticated
+  using (true)
+  with check (true);
+
+drop policy if exists "quiz_sets_delete_admin_client" on public.quiz_sets;
+create policy "quiz_sets_delete_admin_client"
+  on public.quiz_sets
+  for delete
+  to anon, authenticated
+  using (true);
+
 drop policy if exists "quiz_questions_read_public" on public.quiz_questions;
 create policy "quiz_questions_read_public"
   on public.quiz_questions
   for select
+  to anon, authenticated
+  using (true);
+
+drop policy if exists "quiz_questions_insert_admin_client" on public.quiz_questions;
+create policy "quiz_questions_insert_admin_client"
+  on public.quiz_questions
+  for insert
+  to anon, authenticated
+  with check (true);
+
+drop policy if exists "quiz_questions_update_admin_client" on public.quiz_questions;
+create policy "quiz_questions_update_admin_client"
+  on public.quiz_questions
+  for update
+  to anon, authenticated
+  using (true)
+  with check (true);
+
+drop policy if exists "quiz_questions_delete_admin_client" on public.quiz_questions;
+create policy "quiz_questions_delete_admin_client"
+  on public.quiz_questions
+  for delete
   to anon, authenticated
   using (true);
 
@@ -108,10 +152,54 @@ create policy "quiz_options_read_public"
   to anon, authenticated
   using (true);
 
+drop policy if exists "quiz_options_insert_admin_client" on public.quiz_options;
+create policy "quiz_options_insert_admin_client"
+  on public.quiz_options
+  for insert
+  to anon, authenticated
+  with check (true);
+
+drop policy if exists "quiz_options_update_admin_client" on public.quiz_options;
+create policy "quiz_options_update_admin_client"
+  on public.quiz_options
+  for update
+  to anon, authenticated
+  using (true)
+  with check (true);
+
+drop policy if exists "quiz_options_delete_admin_client" on public.quiz_options;
+create policy "quiz_options_delete_admin_client"
+  on public.quiz_options
+  for delete
+  to anon, authenticated
+  using (true);
+
 drop policy if exists "quiz_assets_read_public" on public.quiz_assets;
 create policy "quiz_assets_read_public"
   on public.quiz_assets
   for select
+  to anon, authenticated
+  using (true);
+
+drop policy if exists "quiz_assets_insert_admin_client" on public.quiz_assets;
+create policy "quiz_assets_insert_admin_client"
+  on public.quiz_assets
+  for insert
+  to anon, authenticated
+  with check (true);
+
+drop policy if exists "quiz_assets_update_admin_client" on public.quiz_assets;
+create policy "quiz_assets_update_admin_client"
+  on public.quiz_assets
+  for update
+  to anon, authenticated
+  using (true)
+  with check (true);
+
+drop policy if exists "quiz_assets_delete_admin_client" on public.quiz_assets;
+create policy "quiz_assets_delete_admin_client"
+  on public.quiz_assets
+  for delete
   to anon, authenticated
   using (true);
 

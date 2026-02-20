@@ -51,6 +51,10 @@ export async function createQuizSet(payload: QuizSetInput): Promise<QuizSet | nu
     .single();
 
   if (error || !data) {
+    if (error) {
+      // eslint-disable-next-line no-console
+      console.error("[createQuizSet]", error.message);
+    }
     return null;
   }
 
@@ -78,6 +82,10 @@ export async function updateQuizSet(quizSetId: string, payload: QuizSetInput) {
     })
     .eq("id", quizSetId);
 
+  if (error) {
+    // eslint-disable-next-line no-console
+    console.error("[updateQuizSet]", error.message);
+  }
   return !error;
 }
 
@@ -96,6 +104,10 @@ export async function updateQuestion(questionId: string, payload: QuestionUpdate
     })
     .eq("id", questionId);
 
+  if (error) {
+    // eslint-disable-next-line no-console
+    console.error("[updateQuestion]", error.message);
+  }
   return !error;
 }
 
@@ -116,5 +128,9 @@ export async function upsertOptions(questionId: string, options: OptionUpdate[])
       }))
     );
 
+  if (error) {
+    // eslint-disable-next-line no-console
+    console.error("[upsertOptions]", error.message);
+  }
   return !error;
 }
