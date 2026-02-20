@@ -305,14 +305,12 @@ export function QuizPage({ mode }: QuizPageProps) {
         </Button>
       </header>
       <ProgressTracker current={currentIndex} total={questions.length} />
-      {mode === "jft-mockup" ? (
-        <SectionNavigator
-          questions={questions}
-          currentIndex={currentIndex}
-          answers={answers}
-          onJump={setCurrentIndex}
-        />
-      ) : null}
+      <SectionNavigator
+        questions={questions}
+        currentIndex={currentIndex}
+        answers={answers}
+        onJump={setCurrentIndex}
+      />
       {question.assetUrls && question.assetUrls.length > 0 ? (
         <AudioPlayer sources={question.assetUrls} />
       ) : null}
