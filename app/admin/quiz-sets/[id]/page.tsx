@@ -468,7 +468,21 @@ export default function AdminQuizSetDetailPage() {
                           ].join(" ")}
                         >
                           <span className="inline-flex items-center gap-2">
-                            <Circle className="h-4 w-4 text-muted-foreground" />
+                            <span
+                              className={[
+                                "inline-flex h-4 w-4 items-center justify-center rounded-full border transition-colors",
+                                isSelected
+                                  ? "border-primary"
+                                  : "border-muted-foreground/60"
+                              ].join(" ")}
+                            >
+                              <span
+                                className={[
+                                  "h-2 w-2 rounded-full transition-colors",
+                                  isSelected ? "bg-primary" : "bg-transparent"
+                                ].join(" ")}
+                              />
+                            </span>
                             <span>{option.text}</span>
                           </span>
                           {selectedIsCorrect ? (
@@ -485,7 +499,9 @@ export default function AdminQuizSetDetailPage() {
                     <div className="space-y-2 rounded-md border border-success/35 bg-success/10 p-3">
                       <p className="text-sm font-medium text-success">Jawaban yang benar</p>
                       <div className="inline-flex items-center gap-2 text-sm">
-                        <Circle className="h-4 w-4 text-success" />
+                        <span className="inline-flex h-4 w-4 items-center justify-center rounded-full border border-success">
+                          <span className="h-2 w-2 rounded-full bg-success" />
+                        </span>
                         <span>{correctOption.text}</span>
                       </div>
                     </div>
