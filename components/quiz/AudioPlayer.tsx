@@ -14,6 +14,7 @@ const playbackRates = [0.5, 1, 1.5, 2];
 
 export function AudioPlayer({ sources }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const sourceSignature = sources.join("|");
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
@@ -62,6 +63,19 @@ export function AudioPlayer({ sources }: AudioPlayerProps) {
     }
     audio.playbackRate = playbackRate;
   }, [playbackRate]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) {
+      return;
+    }
+    audio.pause();
+    audio.currentTime = 0;
+    audio.load();
+    setIsPlaying(false);
+    setCurrentTime(0);
+    setDuration(0);
+  }, [sourceSignature]);
 
   const togglePlay = useCallback(async () => {
     const audio = audioRef.current;
