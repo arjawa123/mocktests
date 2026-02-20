@@ -1,16 +1,18 @@
 export type QuizMode = "jft-mockup" | "kisi-kisi";
 
-export interface QuizFile {
+export interface QuizSet {
   id: string;
   mode: QuizMode;
-  label: string;
-  fileName: string;
+  name: string;
   description?: string;
+  level?: string | null;
+  fileName?: string;
 }
 
 export interface QuizOption {
   id: string;
   text: string;
+  imageUrl?: string | null;
 }
 
 export interface QuizQuestion {
@@ -33,6 +35,12 @@ export interface QuizProgress {
   updatedAt: string;
 }
 
+export interface SectionScore {
+  section: string;
+  correct: number;
+  total: number;
+}
+
 export interface QuizResult {
   quizId: string;
   mode: QuizMode;
@@ -42,4 +50,5 @@ export interface QuizResult {
   total: number;
   completedAt: string;
   answers: (string | null)[];
+  sectionScores?: SectionScore[];
 }

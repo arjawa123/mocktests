@@ -1,4 +1,4 @@
-import type { QuizFile, QuizQuestion } from "@/types/quiz";
+import type { QuizQuestion, QuizSet } from "@/types/quiz";
 
 interface MockTestOption {
   choice: string;
@@ -28,7 +28,10 @@ interface KisiKisiItem {
   correct_answer: string;
 }
 
-export async function loadQuizQuestions(file: QuizFile): Promise<QuizQuestion[]> {
+export async function loadQuizQuestions(file: QuizSet): Promise<QuizQuestion[]> {
+  if (!file.fileName) {
+    throw new Error("Missing quiz file reference.");
+  }
   const response = await fetch(`/data/${file.fileName}`);
   if (!response.ok) {
     throw new Error("Failed to load quiz data.");
@@ -73,14 +76,11 @@ function transformKisiKisi(items: KisiKisiItem[]): QuizQuestion[] {
     .map((item) => {
       const uniqueOptionTexts = getUniqueOptionTexts(item.options);
       const matchIndex = uniqueOptionTexts.findIndex(
-        (option) =>
-          normalizeText(option) === normalizeText(item.correct_answer)
+        (option) => normalizeText(option) === normalizeText(item.correct_answer)
       );
       const normalizedAnswer = item.correct_answer.trim();
       const optionTexts =
-        matchIndex >= 0
-          ? uniqueOptionTexts
-          : [...uniqueOptionTexts, normalizedAnswer];
+        matchIndex >= 0 ? uniqueOptionTexts : [...uniqueOptionTexts, normalizedAnswer];
 
       const options = optionTexts.map((text, index) => ({
         id: String.fromCharCode(65 + index),

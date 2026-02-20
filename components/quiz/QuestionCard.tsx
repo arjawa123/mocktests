@@ -23,9 +23,7 @@ export function QuestionCard({
           <Badge>{question.section}</Badge>
           <span className="text-xs text-muted-foreground">Question {index + 1}</span>
         </div>
-        <CardTitle className="text-base leading-relaxed">
-          {question.prompt}
-        </CardTitle>
+        <CardTitle className="text-base leading-relaxed">{question.prompt}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         {question.imageUrl ? (
@@ -43,7 +41,16 @@ export function QuestionCard({
               onClick={() => onSelect(option.id)}
             >
               <span className="font-semibold text-muted-foreground">{option.id}</span>
-              <span>{option.text}</span>
+              <div className="space-y-2">
+                <span>{option.text}</span>
+                {option.imageUrl ? (
+                  <img
+                    src={option.imageUrl}
+                    alt={`Option ${option.id}`}
+                    className="max-h-40 w-full rounded-md border border-border object-contain"
+                  />
+                ) : null}
+              </div>
             </RadioGroupItem>
           ))}
         </RadioGroup>

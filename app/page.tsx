@@ -13,8 +13,8 @@ export default function HomePage() {
           Train with official-style mockups and kisi-kisi drills
         </h1>
         <p className="max-w-2xl text-muted-foreground">
-          Pick a mode to start practicing. Your progress is saved locally so you can
-          resume anytime.
+          Pick a mode to start practicing. Your progress syncs with Supabase when
+          configured so you can resume anytime.
         </p>
       </header>
       <section className="grid gap-6 md:grid-cols-2">

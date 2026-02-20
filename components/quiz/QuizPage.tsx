@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 
 import { AudioPlayer } from "@/components/quiz/AudioPlayer";
@@ -10,17 +10,25 @@ import { QuestionCard } from "@/components/quiz/QuestionCard";
 import { QuizNavigation } from "@/components/quiz/QuizNavigation";
 import { ReviewPanel } from "@/components/quiz/ReviewPanel";
 import { ScoreSummary } from "@/components/quiz/ScoreSummary";
+import { SectionNavigator } from "@/components/quiz/SectionNavigator";
+import { ExportButton } from "@/components/ExportButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getQuizFilesByMode } from "@/lib/data-manifest";
-import { loadQuizQuestions } from "@/lib/data-loader";
+import { fetchQuizQuestions, fetchQuizSets } from "@/lib/supabase/quiz";
 import {
   clearProgress,
   loadProgress,
   saveProgress,
   saveResult
 } from "@/lib/quiz-storage";
-import type { QuizFile, QuizMode, QuizQuestion, QuizProgress } from "@/types/quiz";
+import type {
+  QuizMode,
+  QuizProgress,
+  QuizQuestion,
+  QuizResult,
+  QuizSet,
+  SectionScore
+} from "@/types/quiz";
 
 interface QuizPageProps {
   mode: QuizMode;
@@ -29,37 +37,62 @@ interface QuizPageProps {
 type QuizStatus = "select" | "loading" | "quiz" | "review" | "error";
 
 export function QuizPage({ mode }: QuizPageProps) {
-  const files = useMemo(() => getQuizFilesByMode(mode), [mode]);
+  const [files, setFiles] = useState<QuizSet[]>([]);
+  const [filesLoading, setFilesLoading] = useState(true);
   const [status, setStatus] = useState<QuizStatus>("select");
-  const [selectedFile, setSelectedFile] = useState<QuizFile | null>(null);
+  const [selectedFile, setSelectedFile] = useState<QuizSet | null>(null);
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<(string | null)[]>([]);
   const [error, setError] = useState<string | null>(null);
-  const [progressMap, setProgressMap] = useState<Record<string, QuizProgress | null>>(
-    {}
-  );
+  const [progressMap, setProgressMap] = useState<Record<string, QuizProgress | null>>({});
+  const [lastResult, setLastResult] = useState<QuizResult | null>(null);
 
   useEffect(() => {
-    const map: Record<string, QuizProgress | null> = {};
-    files.forEach((file) => {
-      map[file.id] = loadProgress(buildQuizId(mode, file.id));
-    });
-    setProgressMap(map);
+    let isMounted = true;
+    const loadFiles = async () => {
+      setFilesLoading(true);
+      const loaded = await fetchQuizSets(mode);
+      if (isMounted) {
+        setFiles(loaded);
+        setFilesLoading(false);
+      }
+    };
+    loadFiles();
+    return () => {
+      isMounted = false;
+    };
+  }, [mode]);
+
+  useEffect(() => {
+    if (files.length === 0) {
+      setProgressMap({});
+      return;
+    }
+    const loadProgressMap = async () => {
+      const entries = await Promise.all(
+        files.map(async (file) => {
+          const progress = await loadProgress(buildQuizId(mode, file.id));
+          return [file.id, progress] as const;
+        })
+      );
+      setProgressMap(Object.fromEntries(entries));
+    };
+    loadProgressMap();
   }, [files, mode, status]);
 
   const startQuiz = useCallback(
-    async (file: QuizFile, resume: boolean) => {
+    async (file: QuizSet, resume: boolean) => {
       setStatus("loading");
       setSelectedFile(file);
       setError(null);
       try {
-        const loadedQuestions = await loadQuizQuestions(file);
+        const loadedQuestions = await fetchQuizQuestions(file);
         if (loadedQuestions.length === 0) {
           throw new Error("No valid questions found in this file.");
         }
         const quizId = buildQuizId(mode, file.id);
-        const progress = resume ? loadProgress(quizId) : null;
+        const progress = resume ? await loadProgress(quizId) : null;
         const safeAnswers =
           progress && progress.answers.length === loadedQuestions.length
             ? progress.answers
@@ -88,13 +121,13 @@ export function QuizPage({ mode }: QuizPageProps) {
     const progress: QuizProgress = {
       quizId,
       mode,
-      fileName: selectedFile.fileName,
+      fileName: selectedFile.name,
       currentIndex,
       answers,
       startedAt: progressMap[selectedFile.id]?.startedAt ?? new Date().toISOString(),
       updatedAt: new Date().toISOString()
     };
-    saveProgress(progress);
+    void saveProgress(progress);
   }, [answers, currentIndex, mode, progressMap, selectedFile, status]);
 
   const handleSelect = (answerId: string) => {
@@ -105,25 +138,31 @@ export function QuizPage({ mode }: QuizPageProps) {
     });
   };
 
-  const finishQuiz = () => {
+  const finishQuiz = async () => {
     if (!selectedFile) {
       return;
     }
     const correct = questions.reduce((count, question, index) => {
       return count + (answers[index] === question.answerId ? 1 : 0);
     }, 0);
+
+    const sectionScores = buildSectionScores(questions, answers);
     const quizId = buildQuizId(mode, selectedFile.id);
-    saveResult({
+    const result: QuizResult = {
       quizId,
       mode,
-      fileName: selectedFile.fileName,
+      fileName: selectedFile.name,
       score: Math.round((correct / questions.length) * 250),
       correct,
       total: questions.length,
       completedAt: new Date().toISOString(),
-      answers
-    });
-    clearProgress(quizId);
+      answers,
+      sectionScores
+    };
+
+    await saveResult(result);
+    await clearProgress(quizId);
+    setLastResult(result);
     setStatus("review");
   };
 
@@ -156,7 +195,18 @@ export function QuizPage({ mode }: QuizPageProps) {
             Choose a file to begin. Resume your last attempt or start fresh.
           </p>
         </header>
-        <FileSelector files={files} progressMap={progressMap} onStart={startQuiz} />
+        {filesLoading ? (
+          <Card>
+            <CardHeader>
+              <CardTitle>Loading quizzes...</CardTitle>
+            </CardHeader>
+            <CardContent className="text-sm text-muted-foreground">
+              Fetching quiz sets from the database.
+            </CardContent>
+          </Card>
+        ) : (
+          <FileSelector files={files} progressMap={progressMap} onStart={startQuiz} />
+        )}
       </div>
     );
   }
@@ -212,6 +262,7 @@ export function QuizPage({ mode }: QuizPageProps) {
           </div>
         </div>
         <ScoreSummary correct={correct} total={questions.length} />
+        {lastResult ? <ExportButton result={lastResult} /> : null}
         <ReviewPanel questions={questions} answers={answers} />
       </div>
     );
@@ -229,9 +280,9 @@ export function QuizPage({ mode }: QuizPageProps) {
         </Button>
         <Button
           variant="outline"
-          onClick={() => {
+          onClick={async () => {
             if (selectedFile) {
-              clearProgress(buildQuizId(mode, selectedFile.id));
+              await clearProgress(buildQuizId(mode, selectedFile.id));
             }
             setStatus("select");
           }}
@@ -240,6 +291,13 @@ export function QuizPage({ mode }: QuizPageProps) {
         </Button>
       </header>
       <ProgressTracker current={currentIndex} total={questions.length} />
+      {mode === "jft-mockup" ? (
+        <SectionNavigator
+          questions={questions}
+          currentIndex={currentIndex}
+          onJump={setCurrentIndex}
+        />
+      ) : null}
       {question.assetUrls && question.assetUrls.length > 0 ? (
         <AudioPlayer sources={question.assetUrls} />
       ) : null}
@@ -263,4 +321,21 @@ export function QuizPage({ mode }: QuizPageProps) {
 
 function buildQuizId(mode: QuizMode, fileId: string) {
   return `${mode}-${fileId}`;
+}
+
+function buildSectionScores(
+  questions: QuizQuestion[],
+  answers: (string | null)[]
+): SectionScore[] {
+  const scores: Record<string, SectionScore> = {};
+  questions.forEach((question, index) => {
+    if (!scores[question.section]) {
+      scores[question.section] = { section: question.section, correct: 0, total: 0 };
+    }
+    scores[question.section].total += 1;
+    if (answers[index] === question.answerId) {
+      scores[question.section].correct += 1;
+    }
+  });
+  return Object.values(scores);
 }
