@@ -1,8 +1,14 @@
 import type { QuizProgress, QuizResult } from "@/types/quiz";
+import { isSupabaseConfigured } from "@/lib/supabase";
+import { fetchProgress, persistProgress, removeProgress } from "@/lib/supabase/progress";
+import { fetchResults, persistResult } from "@/lib/supabase/results";
 
 const HISTORY_KEY = "jft-quiz-history";
 
-export function loadProgress(quizId: string): QuizProgress | null {
+export async function loadProgress(quizId: string): Promise<QuizProgress | null> {
+  if (isSupabaseConfigured) {
+    return fetchProgress(quizId);
+  }
   if (typeof window === "undefined") {
     return null;
   }
@@ -17,21 +23,32 @@ export function loadProgress(quizId: string): QuizProgress | null {
   }
 }
 
-export function saveProgress(progress: QuizProgress) {
+export async function saveProgress(progress: QuizProgress) {
+  if (isSupabaseConfigured) {
+    await persistProgress(progress);
+    return;
+  }
   if (typeof window === "undefined") {
     return;
   }
   window.localStorage.setItem(progressKey(progress.quizId), JSON.stringify(progress));
 }
 
-export function clearProgress(quizId: string) {
+export async function clearProgress(quizId: string) {
+  if (isSupabaseConfigured) {
+    await removeProgress(quizId);
+    return;
+  }
   if (typeof window === "undefined") {
     return;
   }
   window.localStorage.removeItem(progressKey(quizId));
 }
 
-export function loadHistory(): QuizResult[] {
+export async function loadHistory(): Promise<QuizResult[]> {
+  if (isSupabaseConfigured) {
+    return fetchResults();
+  }
   if (typeof window === "undefined") {
     return [];
   }
@@ -46,11 +63,15 @@ export function loadHistory(): QuizResult[] {
   }
 }
 
-export function saveResult(result: QuizResult) {
+export async function saveResult(result: QuizResult) {
+  if (isSupabaseConfigured) {
+    await persistResult(result);
+    return;
+  }
   if (typeof window === "undefined") {
     return;
   }
-  const history = loadHistory();
+  const history = await loadHistory();
   history.unshift(result);
   window.localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 20)));
 }

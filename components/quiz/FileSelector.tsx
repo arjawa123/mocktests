@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import type { QuizFile, QuizProgress } from "@/types/quiz";
+import type { QuizProgress, QuizSet } from "@/types/quiz";
 
 interface FileSelectorProps {
-  files: QuizFile[];
+  files: QuizSet[];
   progressMap: Record<string, QuizProgress | null>;
-  onStart: (file: QuizFile, resume: boolean) => void;
+  onStart: (file: QuizSet, resume: boolean) => void;
 }
 
 export function FileSelector({ files, progressMap, onStart }: FileSelectorProps) {
@@ -16,7 +16,7 @@ export function FileSelector({ files, progressMap, onStart }: FileSelectorProps)
         return (
           <Card key={file.id}>
             <CardHeader>
-              <CardTitle>{file.label}</CardTitle>
+              <CardTitle>{file.name}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 text-sm text-muted-foreground">
               <p>{file.description}</p>
@@ -28,11 +28,7 @@ export function FileSelector({ files, progressMap, onStart }: FileSelectorProps)
                 <p>No saved progress yet.</p>
               )}
               <div className="flex flex-wrap gap-2">
-                {progress ? (
-                  <Button onClick={() => onStart(file, true)}>
-                    Resume
-                  </Button>
-                ) : null}
+                {progress ? <Button onClick={() => onStart(file, true)}>Resume</Button> : null}
                 <Button variant="outline" onClick={() => onStart(file, false)}>
                   Start fresh
                 </Button>
