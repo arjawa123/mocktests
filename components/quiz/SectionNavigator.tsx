@@ -23,7 +23,7 @@ export function SectionNavigator({ questions, currentIndex, onJump }: SectionNav
   }, []);
 
   return (
-    <Card className="flex flex-wrap gap-3 p-4 text-sm">
+    <Card className="flex flex-wrap gap-3 border-dashed p-4 text-sm">
       {sections.map((section) => {
         const isActive =
           currentIndex >= section.startIndex &&
@@ -31,7 +31,7 @@ export function SectionNavigator({ questions, currentIndex, onJump }: SectionNav
         return (
           <Button
             key={section.name}
-            variant={isActive ? "secondary" : "outline"}
+            variant={isActive ? "gradient" : "outline"}
             size="sm"
             onClick={() => onJump(section.startIndex)}
           >

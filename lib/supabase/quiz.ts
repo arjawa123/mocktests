@@ -105,7 +105,7 @@ export async function fetchQuizQuestions(quizSet: QuizSet): Promise<QuizQuestion
     {}
   );
 
-  return (questions as SupabaseQuestionRow[]).map((question) => {
+  const mappedQuestions = (questions as SupabaseQuestionRow[]).map((question) => {
     const questionOptions = optionsByQuestion[question.id] ?? [];
     const audioAssets = (assetsByQuestion[question.id] ?? [])
       .filter((asset) => asset.asset_type === "audio")
@@ -125,4 +125,46 @@ export async function fetchQuizQuestions(quizSet: QuizSet): Promise<QuizQuestion
       imageUrl: question.image_url
     };
   });
+
+  const hasAnyImage = mappedQuestions.some(
+    (question) =>
+      Boolean(question.imageUrl) ||
+      question.options.some((option) => Boolean(option.imageUrl))
+  );
+
+  if (hasAnyImage || !quizSet.fileName) {
+    return mappedQuestions;
+  }
+
+  try {
+    const localQuestions = await loadQuizQuestions(quizSet);
+    if (localQuestions.length !== mappedQuestions.length) {
+      return mappedQuestions;
+    }
+
+    return mappedQuestions.map((question, index) => {
+      const localQuestion = localQuestions[index];
+      const mergedOptions = question.options.map((option) => {
+        const localMatch = localQuestion.options.find(
+          (localOption) => localOption.id === option.id
+        );
+        return {
+          ...option,
+          imageUrl: option.imageUrl ?? localMatch?.imageUrl ?? null
+        };
+      });
+
+      return {
+        ...question,
+        imageUrl: question.imageUrl ?? localQuestion.imageUrl ?? null,
+        assetUrls:
+          question.assetUrls && question.assetUrls.length > 0
+            ? question.assetUrls
+            : localQuestion.assetUrls ?? [],
+        options: mergedOptions
+      };
+    });
+  } catch {
+    return mappedQuestions;
+  }
 }

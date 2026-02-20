@@ -3,50 +3,93 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 47.4% 11.2%;
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  --background: 210 40% 98%;
+  --foreground: 222.2 55% 12%;
+  --muted: 210 28% 94%;
+  --muted-foreground: 215 18% 35%;
   --popover: 0 0% 100%;
-  --popover-foreground: 222.2 47.4% 11.2%;
+  --popover-foreground: 222.2 55% 12%;
   --card: 0 0% 100%;
-  --card-foreground: 222.2 47.4% 11.2%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --primary: 222.2 47.4% 11.2%;
-  --primary-foreground: 210 40% 98%;
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
+  --card-foreground: 222.2 55% 12%;
+  --border: 215 26% 87%;
+  --input: 215 26% 87%;
+  --primary: 223 84% 46%;
+  --primary-foreground: 210 100% 99%;
+  --secondary: 210 34% 92%;
+  --secondary-foreground: 222.2 55% 12%;
+  --accent: 205 82% 93%;
+  --accent-foreground: 220 44% 16%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
-  --ring: 215 20.2% 65.1%;
+  --success: 153 68% 35%;
+  --success-foreground: 156 100% 97%;
+  --warning: 35 92% 47%;
+  --warning-foreground: 35 100% 96%;
+  --info: 199 92% 46%;
+  --info-foreground: 203 100% 97%;
+  --ring: 223 84% 46%;
   --radius: 0.75rem;
 }
 
 .dark {
-  --background: 224 71% 4%;
-  --foreground: 213 31% 91%;
-  --muted: 223 47% 11%;
-  --muted-foreground: 215.4 16.3% 56.9%;
-  --popover: 224 71% 4%;
-  --popover-foreground: 215 20.2% 65.1%;
-  --card: 224 71% 4%;
-  --card-foreground: 213 31% 91%;
-  --border: 216 34% 17%;
-  --input: 216 34% 17%;
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 1.2%;
-  --secondary: 222.2 47.4% 11.2%;
-  --secondary-foreground: 210 40% 98%;
-  --accent: 216 34% 17%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 62.8% 30.6%;
+  --background: 224 44% 7%;
+  --foreground: 215 36% 94%;
+  --muted: 224 24% 14%;
+  --muted-foreground: 214 15% 67%;
+  --popover: 224 44% 7%;
+  --popover-foreground: 215 36% 94%;
+  --card: 223 34% 10%;
+  --card-foreground: 215 36% 94%;
+  --border: 218 24% 22%;
+  --input: 218 24% 22%;
+  --primary: 211 100% 71%;
+  --primary-foreground: 222 47% 11%;
+  --secondary: 222 22% 18%;
+  --secondary-foreground: 215 36% 94%;
+  --accent: 216 26% 20%;
+  --accent-foreground: 215 36% 94%;
+  --destructive: 0 76% 54%;
   --destructive-foreground: 210 40% 98%;
-  --ring: 216 34% 17%;
+  --success: 154 62% 42%;
+  --success-foreground: 155 95% 97%;
+  --warning: 35 96% 58%;
+  --warning-foreground: 35 100% 10%;
+  --info: 202 94% 62%;
+  --info-foreground: 203 100% 10%;
+  --ring: 211 100% 71%;
 }
 
 body {
   @apply bg-background text-foreground antialiased;
+  background-image:
+    radial-gradient(52rem 30rem at -10% -8%, color-mix(in srgb, hsl(var(--primary)) 15%, transparent), transparent 60%),
+    radial-gradient(40rem 24rem at 110% 0%, color-mix(in srgb, hsl(var(--info)) 14%, transparent), transparent 62%);
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.2);
+}
+
+.glass {
+  background: hsl(var(--card) / 0.72);
+  border: 1px solid hsl(var(--border) / 0.75);
+  backdrop-filter: blur(12px);
+}
+
+.surface-gradient {
+  background:
+    linear-gradient(165deg, hsl(var(--card) / 0.95) 0%, hsl(var(--accent) / 0.62) 100%);
+}
+
+.text-gradient {
+  background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--info)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
 }

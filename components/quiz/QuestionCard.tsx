@@ -1,3 +1,5 @@
+import { Sparkles } from "lucide-react";
+
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -17,20 +19,21 @@ export function QuestionCard({
   onSelect
 }: QuestionCardProps) {
   return (
-    <Card>
+    <Card className="animate-slide-up">
       <CardHeader className="space-y-3">
         <div className="flex flex-wrap items-center gap-2">
           <Badge>{question.section}</Badge>
           <span className="text-xs text-muted-foreground">Question {index + 1}</span>
+          <Sparkles className="ml-auto h-4 w-4 text-warning" />
         </div>
-        <CardTitle className="text-base leading-relaxed">{question.prompt}</CardTitle>
+        <CardTitle className="text-base leading-relaxed sm:text-lg">{question.prompt}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         {question.imageUrl ? (
           <img
             src={question.imageUrl}
             alt="Question visual"
-            className="max-h-64 w-full rounded-md object-contain"
+            className="max-h-72 w-full rounded-xl border border-border/60 bg-background/40 object-contain p-2"
           />
         ) : null}
         <RadioGroup>

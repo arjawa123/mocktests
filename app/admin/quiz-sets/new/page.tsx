@@ -36,7 +36,8 @@ export default function AdminQuizSetNewPage() {
             <CardTitle>Supabase not configured</CardTitle>
           </CardHeader>
           <CardContent className="text-sm text-muted-foreground">
-            Add your Supabase credentials in .env.local to enable admin creation.
+            Add your Supabase credentials in .env or .env.local to enable admin
+            creation.
           </CardContent>
         </Card>
       ) : (

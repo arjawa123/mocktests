@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { ArrowLeft, ChartNoAxesCombined, Trophy } from "lucide-react";
 
 import { ScoreChart } from "@/components/history/ScoreChart";
 import { SectionBreakdown } from "@/components/history/SectionBreakdown";
 import { StatisticsCard } from "@/components/history/StatisticsCard";
 import { QuizHistoryList } from "@/components/history/QuizHistoryList";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { loadHistory } from "@/lib/quiz-storage";
@@ -52,19 +54,23 @@ export default function HistoryPage() {
   }, [history]);
 
   return (
-    <main className="container min-h-screen space-y-8 py-10">
+    <main className="container min-h-screen space-y-8 py-10 sm:py-12">
       <header className="space-y-3">
         <Button variant="ghost" asChild>
-          <Link href="/">← Back to home</Link>
+          <Link href="/">
+            <ArrowLeft className="h-4 w-4" />
+            Back to home
+          </Link>
         </Button>
-        <h1 className="text-2xl font-semibold">Progress history</h1>
+        <Badge variant="info">Performance Analytics</Badge>
+        <h1 className="text-3xl font-semibold">Progress history</h1>
         <p className="text-sm text-muted-foreground">
           Track your recent scores, section performance, and exported results.
         </p>
       </header>
 
       {loading ? (
-        <Card>
+        <Card className="glass animate-pulse-soft">
           <CardHeader>
             <CardTitle>Loading history...</CardTitle>
           </CardHeader>
@@ -73,9 +79,12 @@ export default function HistoryPage() {
           </CardContent>
         </Card>
       ) : history.length === 0 ? (
-        <Card>
+        <Card className="surface-gradient">
           <CardHeader>
-            <CardTitle>No quiz history yet</CardTitle>
+            <CardTitle className="flex items-center gap-2">
+              <ChartNoAxesCombined className="h-5 w-5 text-primary" />
+              No quiz history yet
+            </CardTitle>
           </CardHeader>
           <CardContent className="text-sm text-muted-foreground">
             Complete a quiz to see your progress recorded here.
@@ -83,6 +92,14 @@ export default function HistoryPage() {
         </Card>
       ) : (
         <div className="grid gap-6">
+          <Card className="surface-gradient">
+            <CardContent className="flex items-center gap-3 p-5 text-sm text-muted-foreground">
+              <Trophy className="h-5 w-5 text-warning" />
+              Your best score currently is{" "}
+              <span className="font-semibold text-foreground">{stats.bestScore}</span>.
+              Keep going to improve consistency.
+            </CardContent>
+          </Card>
           <div className="grid gap-6 lg:grid-cols-3">
             <StatisticsCard
               totalQuizzes={stats.totalQuizzes}

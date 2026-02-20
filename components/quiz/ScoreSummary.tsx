@@ -1,3 +1,6 @@
+import { Award, Target } from "lucide-react";
+
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface ScoreSummaryProps {
@@ -10,12 +13,19 @@ export function ScoreSummary({ correct, total }: ScoreSummaryProps) {
   const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
 
   return (
-    <Card>
+    <Card className="surface-gradient">
       <CardHeader>
-        <CardTitle>Your score</CardTitle>
+        <CardTitle className="flex items-center gap-2">
+          <Award className="h-5 w-5 text-warning" />
+          Your score
+        </CardTitle>
       </CardHeader>
       <CardContent className="grid gap-2 text-sm text-muted-foreground">
-        <div className="text-3xl font-semibold text-foreground">{score} / 250</div>
+        <div className="text-4xl font-semibold text-foreground">{score} / 250</div>
+        <Badge variant={percentage >= 80 ? "success" : percentage >= 60 ? "warning" : "destructive"} className="w-fit">
+          <Target className="mr-1 h-3 w-3" />
+          {percentage >= 80 ? "Excellent" : percentage >= 60 ? "Good effort" : "Needs review"}
+        </Badge>
         <div>
           {correct} correct answers out of {total} ({percentage}%)
         </div>

@@ -116,14 +116,14 @@ export function AudioPlayer({ sources }: AudioPlayerProps) {
   }
 
   return (
-    <Card className="space-y-4 p-4">
+    <Card className="space-y-4 border-dashed p-4">
       <audio ref={audioRef} className="hidden">
         {sources.map((src) => (
           <source key={src} src={src} />
         ))}
       </audio>
       <div className="flex flex-wrap items-center gap-3">
-        <Button variant="secondary" size="sm" onClick={togglePlay}>
+        <Button variant="gradient" size="sm" onClick={togglePlay}>
           {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
           {isPlaying ? "Pause" : "Play"}
         </Button>
@@ -147,7 +147,7 @@ export function AudioPlayer({ sources }: AudioPlayerProps) {
           <select
             value={playbackRate}
             onChange={(event) => setPlaybackRate(Number(event.target.value))}
-            className="rounded-md border border-input bg-background px-2 py-1 text-xs"
+            className="rounded-md border border-input bg-background/80 px-2 py-1 text-xs"
           >
             {playbackRates.map((rate) => (
               <option key={rate} value={rate}>

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import { ArrowLeft, DoorOpen, LoaderCircle } from "lucide-react";
 
 import { AudioPlayer } from "@/components/quiz/AudioPlayer";
 import { FileSelector } from "@/components/quiz/FileSelector";
@@ -186,9 +187,12 @@ export function QuizPage({ mode }: QuizPageProps) {
       <div className="space-y-8">
         <header className="space-y-2">
           <Button variant="ghost" asChild>
-            <Link href="/">← Back to home</Link>
+            <Link href="/">
+              <ArrowLeft className="h-4 w-4" />
+              Back to home
+            </Link>
           </Button>
-          <h1 className="text-2xl font-semibold">
+          <h1 className="text-3xl font-semibold">
             {mode === "jft-mockup" ? "JFT Mockup" : "Kisi-kisi"} mode
           </h1>
           <p className="text-sm text-muted-foreground">
@@ -196,7 +200,7 @@ export function QuizPage({ mode }: QuizPageProps) {
           </p>
         </header>
         {filesLoading ? (
-          <Card>
+          <Card className="glass animate-pulse-soft">
             <CardHeader>
               <CardTitle>Loading quizzes...</CardTitle>
             </CardHeader>
@@ -213,9 +217,12 @@ export function QuizPage({ mode }: QuizPageProps) {
 
   if (status === "loading") {
     return (
-      <Card>
+      <Card className="glass animate-pulse-soft">
         <CardHeader>
-          <CardTitle>Loading quiz...</CardTitle>
+          <CardTitle className="flex items-center gap-2">
+            <LoaderCircle className="h-5 w-5 animate-spin text-primary" />
+            Loading quiz...
+          </CardTitle>
         </CardHeader>
         <CardContent className="text-sm text-muted-foreground">
           Preparing your questions.
@@ -226,7 +233,7 @@ export function QuizPage({ mode }: QuizPageProps) {
 
   if (status === "error") {
     return (
-      <Card>
+      <Card className="border-destructive/35">
         <CardHeader>
           <CardTitle>Unable to load quiz</CardTitle>
         </CardHeader>
@@ -250,7 +257,10 @@ export function QuizPage({ mode }: QuizPageProps) {
       <div className="space-y-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <Button variant="ghost" asChild>
-            <Link href="/">← Back to home</Link>
+            <Link href="/">
+              <ArrowLeft className="h-4 w-4" />
+              Back to home
+            </Link>
           </Button>
           <div className="flex gap-2">
             <Button variant="outline" onClick={() => retryQuiz(false)}>
@@ -276,7 +286,10 @@ export function QuizPage({ mode }: QuizPageProps) {
     <div className="space-y-6">
       <header className="flex flex-wrap items-center justify-between gap-4">
         <Button variant="ghost" asChild>
-          <Link href="/">← Back to home</Link>
+          <Link href="/">
+            <ArrowLeft className="h-4 w-4" />
+            Back to home
+          </Link>
         </Button>
         <Button
           variant="outline"
@@ -287,6 +300,7 @@ export function QuizPage({ mode }: QuizPageProps) {
             setStatus("select");
           }}
         >
+          <DoorOpen className="h-4 w-4" />
           Exit quiz
         </Button>
       </header>

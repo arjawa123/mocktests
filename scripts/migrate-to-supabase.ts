@@ -2,7 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 import fs from "fs/promises";
 import path from "path";
 
-import { quizFiles } from "@/lib/data-manifest";
+import { quizFiles } from "../lib/data-manifest.ts";
 
 interface MockTestOption {
   choice: string;
@@ -42,23 +42,32 @@ if (!supabaseUrl || !serviceKey) {
 const supabase = createClient(supabaseUrl, serviceKey);
 
 async function run() {
+  let migratedSets = 0;
+  let migratedQuestions = 0;
+  let migratedOptions = 0;
+  let migratedAssets = 0;
+
+  // eslint-disable-next-line no-console
+  console.log(`Starting migration for ${quizFiles.length} quiz set(s)...`);
+
   for (const file of quizFiles) {
     if (!file.fileName) {
       continue;
     }
+    // eslint-disable-next-line no-console
+    console.log(`\nMigrating set: ${file.id} (${file.fileName})`);
     const filePath = path.join(process.cwd(), "public", "data", file.fileName);
     const raw = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(raw);
 
-    await supabase
-      .from("quiz_sets")
-      .upsert({
-        id: file.id,
-        mode: file.mode,
-        name: file.name,
-        description: file.description,
-        file_name: file.fileName
-      });
+    await upsertOrThrow("quiz_sets", {
+      id: file.id,
+      mode: file.mode,
+      name: file.name,
+      description: file.description,
+      file_name: file.fileName
+    });
+    migratedSets += 1;
 
     if (file.mode === "jft-mockup") {
       const mockTest = data as MockTestFile;
@@ -75,7 +84,8 @@ async function run() {
         }));
 
       if (questions.length > 0) {
-        await supabase.from("quiz_questions").upsert(questions);
+        await upsertOrThrow("quiz_questions", questions);
+        migratedQuestions += questions.length;
       }
 
       const options = mockTest.items.flatMap((item) =>
@@ -89,7 +99,8 @@ async function run() {
       );
 
       if (options.length > 0) {
-        await supabase.from("quiz_options").upsert(options);
+        await upsertOrThrow("quiz_options", options);
+        migratedOptions += options.length;
       }
 
       const assets = mockTest.items.flatMap((item) =>
@@ -101,7 +112,8 @@ async function run() {
       );
 
       if (assets.length > 0) {
-        await supabase.from("quiz_assets").upsert(assets);
+        await upsertOrThrow("quiz_assets", assets);
+        migratedAssets += assets.length;
       }
     } else {
       const kisiItems = data as KisiKisiItem[];
@@ -138,7 +150,8 @@ async function run() {
         answer_id: answerId,
         image_url: item.image
       }));
-      await supabase.from("quiz_questions").upsert(questions);
+      await upsertOrThrow("quiz_questions", questions);
+      migratedQuestions += questions.length;
 
       const options = normalized.flatMap(({ item, options }) =>
         options.map((option, index) => ({
@@ -149,8 +162,26 @@ async function run() {
           order_index: index
         }))
       );
-      await supabase.from("quiz_options").upsert(options);
+      await upsertOrThrow("quiz_options", options);
+      migratedOptions += options.length;
     }
+
+    // eslint-disable-next-line no-console
+    console.log(`Done: ${file.id}`);
+  }
+
+  // eslint-disable-next-line no-console
+  console.log("\nMigration completed.");
+  // eslint-disable-next-line no-console
+  console.log(
+    `Summary: sets=${migratedSets}, questions=${migratedQuestions}, options=${migratedOptions}, assets=${migratedAssets}`
+  );
+}
+
+async function upsertOrThrow<T>(table: string, payload: T | T[]) {
+  const { error } = await supabase.from(table).upsert(payload);
+  if (error) {
+    throw new Error(`[${table}] ${error.message}`);
   }
 }
 

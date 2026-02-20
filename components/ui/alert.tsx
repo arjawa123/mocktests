@@ -4,13 +4,15 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const alertVariants = cva(
-  "relative w-full rounded-lg border p-4 text-sm",
+  "relative w-full rounded-xl border p-4 text-sm shadow-soft",
   {
     variants: {
       variant: {
-        default: "border-border bg-background",
-        success: "border-emerald-200 bg-emerald-50 text-emerald-900",
-        destructive: "border-destructive/50 text-destructive"
+        default: "border-border bg-background/80 text-foreground",
+        success: "border-success/40 bg-success/10 text-success",
+        destructive: "border-destructive/50 bg-destructive/10 text-destructive",
+        warning: "border-warning/45 bg-warning/10 text-warning",
+        info: "border-info/45 bg-info/10 text-info"
       }
     },
     defaultVariants: {
@@ -39,7 +41,7 @@ const AlertDescription = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLParagraphElement>
 >(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("text-sm text-muted-foreground", className)} {...props} />
+  <div ref={ref} className={cn("text-sm leading-relaxed opacity-95", className)} {...props} />
 ));
 AlertDescription.displayName = "AlertDescription";
 

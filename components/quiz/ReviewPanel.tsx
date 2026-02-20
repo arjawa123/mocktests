@@ -1,3 +1,5 @@
+import { CheckCircle2, CircleX } from "lucide-react";
+
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -22,10 +24,12 @@ export function ReviewPanel({ questions, answers }: ReviewPanelProps) {
         );
 
         return (
-          <Card key={question.id}>
+          <Card key={question.id} className="animate-fade-in">
             <CardHeader className="space-y-3">
               <div className="flex items-center gap-2">
-                <Badge>{question.section}</Badge>
+                <Badge variant={isCorrect ? "success" : "destructive"}>
+                  {question.section}
+                </Badge>
                 <span className="text-xs text-muted-foreground">
                   Question {index + 1}
                 </span>
@@ -37,7 +41,14 @@ export function ReviewPanel({ questions, answers }: ReviewPanelProps) {
             <CardContent className="space-y-4">
               <Alert variant={isCorrect ? "success" : "destructive"}>
                 <AlertTitle>
-                  {isCorrect ? "Correct" : "Needs review"}
+                  <span className="inline-flex items-center gap-2">
+                    {isCorrect ? (
+                      <CheckCircle2 className="h-4 w-4" />
+                    ) : (
+                      <CircleX className="h-4 w-4" />
+                    )}
+                    {isCorrect ? "Correct" : "Needs review"}
+                  </span>
                 </AlertTitle>
                 <AlertDescription>
                   {selectedOption
