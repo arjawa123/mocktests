@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import { Sparkles } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";

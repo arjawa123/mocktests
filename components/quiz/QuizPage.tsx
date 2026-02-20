@@ -309,6 +309,7 @@ export function QuizPage({ mode }: QuizPageProps) {
         <SectionNavigator
           questions={questions}
           currentIndex={currentIndex}
+          answers={answers}
           onJump={setCurrentIndex}
         />
       ) : null}
